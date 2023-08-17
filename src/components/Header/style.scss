@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;600;700&family=Oswald:wght@300;400&display=swap');
+
+body {
+  font-family: 'Hind Vadodara', sans-serif;
+  body {
+      overflow: hidden;
+    }
+    box-sizing: border-box;
+}
+
+
+
+[class$="__container"] {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.header__content {
+  display: flex;
+  
+  margin-top: 43px;
+  margin-bottom: 162px;
+}
+
+.header__menu {
+
+}
+
+.header__list {
+  display: flex;
+  gap: 20px;
+  margin-right: 217px;
+ 
+}
+
+.header__item {
+  position: relative;
+}
+
+.header__item-text {
+  color: #331B3B;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.16px;
+  transition: text-shadow 0.3s ease;
+  position: relative;
+}
+
+.header__item:hover .header__item-text {
+  text-shadow: 0 0 .35px #292727, 0 0 .35px #2b2929;
+  /* Змінити тінь тексту при ховері */
+}
+
+
+
+.header__logo {
+
+}
+
+.header__logo-link {
+
+}
+
+.header__social {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-left: 419px;
+}
+
+.header__social-link {
+ position: relative;
+}
+.header__social-link::before {
+  content: "";
+  background-image: url('./image/back.svg');
+  width: 45.614000000000004px;
+    height: 49.614px;
+    position: absolute;
+    top: -12px;
+    left: -12px;
+}

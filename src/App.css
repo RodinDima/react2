@@ -1,0 +1,13 @@
+.block2 { 
+  background-color:blue;
+  position: fixed;
+  display: block;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+}
+.block1 {
+  background: #e11919;
+  width: 100%;
+}

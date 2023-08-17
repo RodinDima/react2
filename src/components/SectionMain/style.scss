@@ -1,0 +1,75 @@
+.main {
+}
+.main__container {
+}
+.main__content {
+    display: flex;
+    position: relative;
+}
+.main__text {
+}
+.main__text-title {
+    color: #331B3B;
+    font-family: Hind Vadodara;
+    font-size: 87px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 99.8%;
+    letter-spacing: -0.87px;
+    width: 498px;
+    margin-bottom: 27px;
+}
+.main__text-paragraph {
+    color: rgba(51, 27, 59, 0.66);
+    font-family: Hind Vadodara;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 146.3%; /* 24.871px */
+    letter-spacing: 0.34px;
+    width: 515px;
+    margin-bottom: 31px;
+}
+
+.main-button{
+    border-radius: 10px;
+background: #331B3B;
+padding: 22px 49px;
+color: #fff;
+cursor: pointer;
+}
+
+.main-button::after{
+    content: url('./image/11.png');
+    position: absolute;
+    top: -63px;
+    right: 177px;
+}
+
+
+.main__img {
+    position: relative;
+    top: -85px;
+    right: -79px;
+    z-index: 1;
+}
+
+.main__img-overlay {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    
+    background-image: url('./image/yellow.png');
+    z-index: 0;
+}
+
+.main__img::before {
+    content: '';
+    position: absolute;
+    top: -233px;
+    right: -1px;
+    
+    background-image: url('./image/yellow-2.png');
+    z-index: -1;
+}
+

@@ -4,6 +4,7 @@ body {
 }
 
 .main {
+    margin-bottom: 148px;
 }
 .main__container {
 }
@@ -73,7 +74,7 @@ cursor: pointer;
 
 
 .main__img {
-    position: relative;
+    position: absolute;
     top: -85px;
     right: -7px;
     z-index: 10;

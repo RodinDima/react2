@@ -16,6 +16,7 @@ const SectionMain = () => {
     <>
 
       <main className="main">
+        <div className='rightTopCorner'></div>
         <div className="main__container">
           <div className="main__content">
             <div className="main__text">
@@ -31,17 +32,15 @@ const SectionMain = () => {
                 }}
                 className="main-button"
               />
-              
-              <img className="yellow" src={Yellow} alt="My SVG" />
-              <img className="yellow2" src={Yellow2} alt="My SVG" />
-              <img className="circle" src={Circle} alt="My SVG" />
             </div>
               
-             <div> <img className="main__img" src={MainBg} alt="My SVG" /></div>
-            
-           
-              
-           
+             <div className='test'>         
+                <img className="yellow" src={Yellow} alt="My SVG" />
+                {/* <img className="yellow2" src={Yellow2} alt="My SVG" /> */}
+                {/* <img className="circle" src={Circle} alt="My SVG" /> */}
+                <div className='dashedCircle'></div>
+                <img className="main__img" src={MainBg} alt="My SVG" />
+              </div>
           </div>
         </div>
       </main>

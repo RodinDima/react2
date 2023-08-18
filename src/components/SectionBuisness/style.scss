@@ -1,12 +1,9 @@
 
-
-
-
-
-.business__content {
-
-	
-	
+.business {
+	background-color: #ECF7FF;
+	border-radius: 0px 400px 0px 0px;
+	margin-right: 107px;
+	max-height: 578px;
 }
 
 .content__title {
@@ -21,20 +18,23 @@
 		/* 51.024px */
 		letter-spacing: -0.48px;
 		width: 348px;
-		background-color: #ECF7FF;
+
 		padding: 92px 416px 384px 526px;
-	border-radius: 0px 400px 0px 0px;
+
 	position: relative;
 }
 
-.title-after {
-	color: #331B3B;
+.title {
+	&-after {
+		color: red;
 		font-family: Hind Vadodara;
 		font-size: 48px;
 		font-style: normal;
 		font-weight: 300;
 		line-height: 106.3%;
 		letter-spacing: -0.48px;
+	}
+
 }
 .buisness__slider {
 	position: relative;
@@ -59,3 +59,7 @@
 .slider__item-title {}
 
 .slider__item-text {}
+
+.someText {
+	color: blue;
+}

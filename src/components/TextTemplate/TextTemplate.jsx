@@ -5,7 +5,7 @@ import cn from 'classnames';
 import style from './TextTemplate.module.scss';
 
 const TextTemplate = ({ className, text }) => {
-  return <div className={cn(style.textTemplate, className, style['special-text'])}>{text}</div>;
+  return <span className={cn(style.textTemplate, className, style['special-text'])}>{text}</span>;
 };
 
 TextTemplate.propTypes = {

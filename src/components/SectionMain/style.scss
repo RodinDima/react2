@@ -1,19 +1,12 @@
-
-body {
-    overflow: hidden;
-}
-
 .main {
     margin-bottom: 148px;
 }
-.main__container {
-}
+
 .main__content {
     display: flex;
-    position: relative;
+    justify-content: space-between;
 }
-.main__text {
-}
+
 .main__text-title {
     position: relative;
     color: #331B3B;
@@ -27,22 +20,12 @@ body {
     margin-bottom: 27px;
     z-index: 2;
 }
+
 .main__text-title-before {
-    content: "";
-    width: 291px;
-    height: 20px;
-    background-image: url('./image/Vector.svg');
-    position: absolute;
-    top: 232px;
-    left: 0;
-    z-index: 1;
 }
 
 .main__text-title p {
-    font-weight: 700;
-}
-
-.main__text-paragraph {
+    font-weight: 700;border-radius: 50%;
     color: rgba(51, 27, 59, 0.66);
     font-family: Hind Vadodara;
     font-size: 17px;
@@ -57,14 +40,13 @@ body {
 
 .main-button{
     border-radius: 10px;
-background: #331B3B;
-padding: 22px 49px;
-color: #fff;
-cursor: pointer;
+    background: #331B3B;
+    padding: 22px 49px;
+    color: #fff;
+    cursor: pointer;
     line-height: 137.3%;
-        /* fz23.341px */
-        letter-spacing: 0.34px;
-        text-transform: uppercase;
+    letter-spacing: 0.34px;
+    text-transform: uppercase;
     font-family: Hind Vadodara;
     font-size: 17px;
     border: none;
@@ -85,22 +67,49 @@ cursor: pointer;
 .yellow {
     position: absolute;
     top: -145px;
-        right: 177px;
-     z-index: 2;
+    right: 177px;
+    z-index: 2;
 }
 .yellow2 {
     position: absolute;
     top: -231px;
-        right: -15px;
+    right: -15px;
 }
 
 .main-button:hover{
     background: #FDC221;
     color: #331B3B;
 }
+
 .circle {
     position: absolute;
+
+}
+
+
+
+
+.test {
+    position: relative;
+}
+
+.rightTopCorner {
+    width: 867.54px;
+    height: 819.82px;
+    background: rgba(254, 200, 40, 0.2);
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.dashedCircle {
+    position: absolute;
+    width: 581px;
+    height: 498px;
+    border: 2px dashed black;
+    border-radius: 50%;
     top: -50px;
-        right: 158px;
-        z-index: 1;
+    right: 158px;
+    z-index: 1;
 }

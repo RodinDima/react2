@@ -1,0 +1,100 @@
+.main {
+}
+.main__container {
+}
+.main__content {
+    display: flex;
+    position: relative;
+}
+.main__text {
+}
+.main__text-title {
+    position: relative;
+    color: #331B3B;
+    font-family: Hind Vadodara;
+    font-size: 87px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 99.8%;
+    letter-spacing: -0.87px;
+    width: 498px;
+    margin-bottom: 27px;
+    z-index: 2;
+}
+.main__text-title-before {
+    content: "";
+    width: 291px;
+    height: 20px;
+    background-image: url('./image/Vector.svg');
+    position: absolute;
+    top: 232px;
+    left: 0;
+    z-index: 1;
+}
+
+.main__text-title p {
+    font-weight: 700;
+}
+
+.main__text-paragraph {
+    color: rgba(51, 27, 59, 0.66);
+    font-family: Hind Vadodara;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 146.3%; /* 24.871px */
+    letter-spacing: 0.34px;
+    width: 515px;
+    margin-bottom: 31px;
+    margin-right: 94px;
+}
+
+.main-button{
+    border-radius: 10px;
+background: #331B3B;
+padding: 22px 49px;
+color: #fff;
+cursor: pointer;
+    line-height: 137.3%;
+        /* fz23.341px */
+        letter-spacing: 0.34px;
+        text-transform: uppercase;
+    font-family: Hind Vadodara;
+    font-size: 17px;
+    border: none;
+}
+
+
+
+
+.main__img {
+    position: relative;
+    top: -85px;
+    right: -7px;
+    z-index: 10;
+}
+
+
+
+.yellow {
+    position: relative;
+    top: -605px;
+     right: -690px;
+     z-index: 2;
+}
+.yellow2 {
+    position: relative;
+        top: -1320px;
+        right: -773px;
+}
+
+.main-button:hover{
+    background: #FDC221;
+    color: #331B3B;
+}
+.circle {
+    position: absolute;
+    top: -50px;
+        right: 158px;
+        z-index: 1;
+}

@@ -37,13 +37,13 @@ const Header = () => {
               </a>
             </div>
             <div className="header__social">
-              <a href="" className="header__social-link">
+              <a href="#" className="header__social-link">
                 <img src={FaceBook} alt="My SVG" />
               </a>
-              <a href="" className="header__social-link">
+              <a href="#" className="header__social-link">
                 <img src={In} alt="My SVG" />
               </a>
-              <a href="" className="header__social-link">
+              <a href="#" className="header__social-link">
                 <img src={Inst} alt="My SVG" />
               </a>
               

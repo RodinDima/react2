@@ -1,8 +1,10 @@
 import React from 'react';
 import TextTemplate from '../TextTemplate';
 import Web from './image/web.png';
-
 import './style.scss';
+import { Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const SectionBusiness = () => {
   return (
@@ -13,8 +15,22 @@ const SectionBusiness = () => {
           </TextTemplate>*/}
          <div className='business__content'>
             <h3 className='busines__title'><span><TextTemplate className="busines__firstStroke" text="What we do"/> </span><br /><span className='business__title-after'>For Your <span className='lastWord-mod'>Busines</span> <TextTemplate/></span></h3> 
-            <div className="slider buisness__slider">
-              <div className="slider__box">
+            <div className="slider buisness__slider" >
+              
+              
+              
+            <SwiperSlide>
+              <div className="slider__box"><Swiper
+              slidesPerView={2}
+              spaceBetween={10} // проміжок між слайдами
+              modules={[Navigation]}
+              modules={[Pagination]} // додаткові кнопки для навігації
+              pagination={{ clickable: true }} //
+              pagination={{ type: 'bullets', clickable: true }}
+               
+               
+              ></Swiper>
+                
                 <div className="slider__item">
                   <div className="slider__item-img">
                   <img src={Web} alt="My SVG" />
@@ -37,6 +53,7 @@ const SectionBusiness = () => {
                     <div className="slider__item-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
                 </div>
                  </div>
+                </SwiperSlide>
             </div>
          </div>
       </div>

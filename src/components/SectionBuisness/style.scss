@@ -5,7 +5,6 @@ border-radius: 0px 400px 0px 0px;
 margin-right: 107px;
 height: 578px;
 }
-
 .business__content{
 padding-top: 92px;
 text-align: center;
@@ -51,6 +50,7 @@ letter-spacing: -0.48px;
 .lastWord-mod{
 display: inline-block;
 position: relative;
+z-index: 1;
 }
 
 .lastWord-mod::before {
@@ -60,18 +60,12 @@ width: 95%;
 height: 10px;
 background-color:#FDC221 ;
 bottom: 0;
-z-index: 1;
+z-index: -1;
 }
-
-
-
-
 
 .buisness__slider {
 margin-top: 41px;
 }
-
-
 
 .slider {}
 
@@ -79,8 +73,6 @@ margin-top: 41px;
 display: flex;
 gap: 41px;
 margin-left: 277px;
-
-
 
 }
 

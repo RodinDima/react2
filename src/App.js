@@ -2,6 +2,8 @@ import Header from "./components/Header/Header";
 import SectionAboutUs from "./components/SectionAboutUs/SectionAbotUs";
 import SectionBusiness from "./components/SectionBuisness/SectionBusiness";
 import SectionMain from "./components/SectionMain/SectionMain";
+import SectionReviews from "./components/SectionReviews/SectionReviews";
+import SectionWork from "./components/SectionWork/SectionWork";
 
 
 
@@ -13,7 +15,8 @@ function App() {
       <SectionMain />
       <SectionBusiness />
       <SectionAboutUs />
-      <SectionBusiness />
+      <SectionWork />
+      <SectionReviews />
       
      
      

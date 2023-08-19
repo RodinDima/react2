@@ -68,17 +68,23 @@ body {
   justify-content: center;
   gap: 40px;
   margin-left: 419px;
+  border-radius: 50%;
 }
 
 .header__social-link {
- position: relative;
+ 
 }
 .header__social-link::before {
   content: "";
-  background-image: url('./image/back.svg');
-  width: 45.614000000000004px;
-    height: 49.614px;
-    position: absolute;
-    top: -13px;
-    left: -12px;
+  width: 43.614px;
+height: 49.614px;
+stroke-width: 2px;
+stroke: rgba(51, 27, 59, 0.64);
+
 }
+
+.header__social-link {
+  display: inline-block;
+  margin-right: 10px;
+}
+

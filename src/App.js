@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import SectionAboutUs from "./components/SectionAboutUs/SectionAbotUs";
 import SectionBusiness from "./components/SectionBuisness/SectionBusiness";
@@ -17,6 +18,7 @@ function App() {
       <SectionAboutUs />
       <SectionWork />
       <SectionReviews />
+      <Footer />
       
      
      

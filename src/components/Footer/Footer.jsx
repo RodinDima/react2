@@ -1,9 +1,6 @@
 import './reset.scss';
 import './style.scss';
-//import SimpleMap from './SimpleMap/SimpleMap';
-
-
-
+import SimpleMap from '../SimpleMap/index';
 
 
 const Footer = () => {
@@ -20,17 +17,19 @@ const Footer = () => {
           </p>
           <form className="footer__form" action="">
             <div className="footer__form-text">Get In Touch</div>
-            <input
-              className="footer__input"
-              placeholder="Enter Your Email"
-              type="text"
-            />
+            <div>
+              <input
+                className="footer__input"
+                placeholder="Enter Your Email"
+                type="text"
+              />
+              <button className="footer__btn" type="submit">
+                Send
+              </button>
+            </div>
           </form>
-          <button className="footer__btn" type="button">
-            Send{" "}
-          </button>
         </div>
-        <div className="footer__map">{/*<SimpleMap />*/}</div>
+        <div className="footer__map"><SimpleMap /></div>
       </div>
     </footer>
   );

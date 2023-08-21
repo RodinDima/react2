@@ -6,9 +6,6 @@ import SectionMain from "./components/SectionMain/SectionMain";
 import SectionReviews from "./components/SectionReviews/SectionReviews";
 import SectionWork from "./components/SectionWork/SectionWork";
 
-
-
-
 function App() {
   return (
     <>
@@ -19,10 +16,6 @@ function App() {
       <SectionWork />
       <SectionReviews />
       <Footer />
-      
-     
-     
-   
     </>
   );
 }

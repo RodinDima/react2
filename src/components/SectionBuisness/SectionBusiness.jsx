@@ -17,81 +17,81 @@ const SectionBusiness = () => {
         <div className='business__content'>
           <div className='business__dashedCircle'></div>
 
-          <h3 className='busines__title'><span><TextTemplate className="busines__firstStroke" text="What we do" /> </span><br /><span className='business__title-after'>For Your <span className='lastWord-mod'>Busines</span> <TextTemplate /></span></h3>
+          <h3 className='busines__title'>
+            <span>
+              <TextTemplate className="busines__firstStroke" text="What we do" />
+            </span>
+            <br />
+            <span className='business__title-after'>
+              For Your
+              <span className='lastWord-mod'>Busines</span> 
+              </span>
+          </h3>
           <div className="slider buisness__slider" >
-
-
+            <Swiper
+              slidesPerView={3}
+              spaceBetween={10}
+              modules={[Navigation , Pagination]}
+              pagination={{ type: 'bullets', clickable: true }}
+              navigation={{ clickable: true , prevEl: '.slider-prev-button',
+              nextEl: '.slider-next-button'}}
+            >
 
             
-              <Swiper
-                slidesPerView={3}
-                spaceBetween={10} // проміжок між слайдами
-                modules={[Navigation , Pagination]}
-                 // додаткові кнопки для навігації
-                pagination={{ clickable: true }} //
-                pagination={{ type: 'bullets', clickable: true }}
-                navigation={{ clickable: true , prevEl: '.slider-prev-button',
-                nextEl: '.slider-next-button'}}
-              >
+            <SwiperSlide>
+              <div className='slider'>
+                <div className="slider__item">
+                  <div className="slider__item-img">
+                    <img src={Web} alt="My SVG" />
+                  </div>
+                  <div className="slider__item-title">Website Design</div>
+                  <div className="slider__item-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+                </div>
+              </div>
+              </SwiperSlide>
 
+              <SwiperSlide>
+              <div className="slider__item">
+                <div className="slider__item-img">
+                  <img src={Web} alt="My SVG" />
+                </div>
+                <div className="slider__item-title">Website Design</div>
+                <div className="slider__item-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+              </div>
+              </SwiperSlide>
               
               <SwiperSlide>
-                <div className='slider'>
-                  <div className="slider__item">
-                    <div className="slider__item-img">
-                      <img src={Web} alt="My SVG" />
-                    </div>
-                    <div className="slider__item-title">Website Design</div>
-                    <div className="slider__item-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
-                  </div>
+              <div className="slider__item">
+                <div className="slider__item-img">
+                  <img src={Web} alt="My SVG" />
                 </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                <div className="slider__item">
-                  <div className="slider__item-img">
-                    <img src={Web} alt="My SVG" />
-                  </div>
-                  <div className="slider__item-title">Website Design</div>
-                  <div className="slider__item-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+                <div className="slider__item-title">Website Design</div>
+                <div className="slider__item-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+              </div>
+              </SwiperSlide>
+              <SwiperSlide>
+              <div className="slider__item">
+                <div className="slider__item-img">
+                  <img src={Web} alt="My SVG" />
                 </div>
-                </SwiperSlide>
-                
-                <SwiperSlide>
-                <div className="slider__item">
-                  <div className="slider__item-img">
-                    <img src={Web} alt="My SVG" />
-                  </div>
-                  <div className="slider__item-title">Website Design</div>
-                  <div className="slider__item-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+                <div className="slider__item-title">Website Design</div>
+                <div className="slider__item-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+              </div>
+              </SwiperSlide>
+              <SwiperSlide>
+              <div className="slider__item">
+                <div className="slider__item-img">
+                  <img src={Web} alt="My SVG" />
                 </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                <div className="slider__item">
-                  <div className="slider__item-img">
-                    <img src={Web} alt="My SVG" />
-                  </div>
-                  <div className="slider__item-title">Website Design</div>
-                  <div className="slider__item-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
-                </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                <div className="slider__item">
-                  <div className="slider__item-img">
-                    <img src={Web} alt="My SVG" />
-                  </div>
-                  <div className="slider__item-title">Website Design</div>
-                  <div className="slider__item-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
-                </div>
-                </SwiperSlide>
-                </Swiper>
-                <div className="slider-navigation">
-                  <div className="slider-prev-button"></div>
-                  <div className="slider-next-button"></div>
-
-                </div>
-              
-            
+                <div className="slider__item-title">Website Design</div>
+                <div className="slider__item-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+              </div>
+              </SwiperSlide>
+              </Swiper>
+              <div className="slider-navigation">
+                <div className="slider-prev-button"></div>
+                <div className="slider-next-button"></div>
+              </div>
           </div>
         </div>
       </div>

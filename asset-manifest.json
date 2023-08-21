@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/RodinDima/react2.git/static/css/main.3c57f6fb.css",
+    "main.js": "/RodinDima/react2.git/static/js/main.cb3ce003.js",
+    "static/js/787.055185dc.chunk.js": "/RodinDima/react2.git/static/js/787.055185dc.chunk.js",
+    "static/media/main-bg.png": "/RodinDima/react2.git/static/media/main-bg.216fab251756eb26987c.png",
+    "static/media/about.png": "/RodinDima/react2.git/static/media/about.6ad1170d4ce5b3370353.png",
+    "static/media/big.png": "/RodinDima/react2.git/static/media/big.67830e1694b6a166e3e6.png",
+    "static/media/small.png": "/RodinDima/react2.git/static/media/small.f7b3d734ba4b6b38dfbc.png",
+    "static/media/about__yellow.png": "/RodinDima/react2.git/static/media/about__yellow.90a7d96137e6be2484dc.png",
+    "static/media/yellow.png": "/RodinDima/react2.git/static/media/yellow.69e2620c5fca7e33674e.png",
+    "static/media/inst.svg": "/RodinDima/react2.git/static/media/inst.98c8c2fea156dcecd10ba5f5dfbbb405.svg",
+    "static/media/in.svg": "/RodinDima/react2.git/static/media/in.d6ca83ae2cf7889c6e006345b109a41f.svg",
+    "index.html": "/RodinDima/react2.git/index.html",
+    "static/media/Facebook.svg": "/RodinDima/react2.git/static/media/Facebook.9c886b5ac1fb32f0b240350991c7806d.svg",
+    "static/media/icon.svg": "/RodinDima/react2.git/static/media/icon.c8a85cad1f0ac0d11f05dfa79fa0fb9c.svg",
+    "main.3c57f6fb.css.map": "/RodinDima/react2.git/static/css/main.3c57f6fb.css.map",
+    "main.cb3ce003.js.map": "/RodinDima/react2.git/static/js/main.cb3ce003.js.map",
+    "787.055185dc.chunk.js.map": "/RodinDima/react2.git/static/js/787.055185dc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c57f6fb.css",
+    "static/js/main.cb3ce003.js"
+  ]
+}

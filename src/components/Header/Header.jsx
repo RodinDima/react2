@@ -1,13 +1,9 @@
-import './reset.scss';
-import './style.scss';
-import FaceBook from './image/Facebook.svg';
-import In from './image/in.svg';
-import Inst from './image/inst.svg';
-import Logo from './image/logo.png';
-
-
-
-
+import "./reset.scss";
+import "./style.scss";
+import FaceBook from "./image/Facebook.svg";
+import In from "./image/in.svg";
+import Inst from "./image/inst.svg";
+import Logo from "./image/logo.png";
 
 const Header = () => {
   return (
@@ -18,16 +14,24 @@ const Header = () => {
             <nav className="header__menu">
               <ul className="header__list">
                 <li className="header__item">
-                  <a href="" className="header__item-text">Home</a>
+                  <a href="" className="header__item-text">
+                    Home
+                  </a>
                 </li>
                 <li className="header__item">
-                  <a href="" className="header__item-text">About Us</a>
+                  <a href="" className="header__item-text">
+                    About Us
+                  </a>
                 </li>
                 <li className="header__item">
-                  <a href="" className="header__item-text">Services </a>
+                  <a href="" className="header__item-text">
+                    Services{" "}
+                  </a>
                 </li>
                 <li className="header__item">
-                  <a href="" className="header__item-text">Contact Us</a>
+                  <a href="" className="header__item-text">
+                    Contact Us
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -37,29 +41,27 @@ const Header = () => {
               </a>
             </div>
             <div className="header__social">
-              <a href="#" className="header__social-link">
-              
-                <img src={FaceBook} alt="My SVG" />
-              </a>
-              <a href="#" className="header__social-link">
-                <img src={In} alt="My SVG" />
-              </a>
-              <a href="#" className="header__social-link">
-                <img src={Inst} alt="My SVG" />
-              </a>
-              
+              <div className="header__social-wrapper">
+                <a href="#" className="header__social-link">
+                  <img src={FaceBook} alt="My SVG" />
+                </a>
+              </div>
+              <div className="header__social-wrapper">
+                <a href="#" className="header__social-link">
+                  <img src={In} alt="My SVG" />
+                </a>
+              </div>
+              <div className="header__social-wrapper">
+                <a href="#" className="header__social-link">
+                  <img src={Inst} alt="My SVG" />
+                </a>
+              </div>
             </div>
           </div>
-         
-          </div>
-        </header>
-        
-      
-      
-       
-
+        </div>
+      </header>
     </>
   );
-}
+};
 
 export default Header;

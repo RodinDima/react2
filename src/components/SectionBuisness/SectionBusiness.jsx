@@ -15,6 +15,8 @@ const SectionBusiness = () => {
             <span className={style['special-text']}>What We Do</span> <span className={style['special-text']}>For Your</span> <span className={style['special-text']}>Business</span> <span className={style['pseudo-class-text']}>Fake or Real</span>
           </TextTemplate>*/}
         <div className='business__content'>
+          <div className='business__dashedCircle'></div>
+
           <h3 className='busines__title'><span><TextTemplate className="busines__firstStroke" text="What we do" /> </span><br /><span className='business__title-after'>For Your <span className='lastWord-mod'>Busines</span> <TextTemplate /></span></h3>
           <div className="slider buisness__slider" >
 

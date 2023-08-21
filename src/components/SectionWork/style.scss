@@ -2,7 +2,7 @@
 border-radius: 400px 0px 0px 0px;
 background: rgba(255, 222, 212, 0.30);
 height: 673px;
-margin-left: 100px;
+margin-top: 100px;
 margin-bottom: 75px;
 
 }
@@ -27,11 +27,12 @@ letter-spacing: 0.34px;
 margin-bottom: 89px;
 }
 .work__slider {
+position: relative;
 }
 .slider__work {
 display: flex;
 gap: 43px;
-margin-left: 218px;
+margin-left: 468px;
 }
 
 .slider__work-box {
@@ -75,3 +76,13 @@ border: 1px solid #343434;
 display: inline-block;
 margin-right: 30px;
 }
+
+.slider__work .swiper-wrapper {
+gap:150px}
+
+.slider__work .slider-navigation {
+position: absolute;
+top: 400px;
+left: -547px;}
+
+

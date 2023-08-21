@@ -3,11 +3,16 @@ margin-top: 200px;
 }
 .AboutUs__container {
 display: flex;
+justify-content: space-between;
 }
+
 .about__bg {
 position: relative;
-
+top: 66px;
+right: -128px;
 }
+
+
 .about__img {
 position: absolute;
 top: -352px;
@@ -23,6 +28,14 @@ z-index: 1;
 }
 
 .about__dashedCircle {
+position: absolute;
+width: 604px;
+height: 598px;
+border: 2px dashed black;
+border-radius: 50%;
+top: -103px;
+right: 172px;
+z-index: -1;
 }
 
 .AboutUs__content {
@@ -43,7 +56,6 @@ line-height: 146.3%; /* 24.871px */
 letter-spacing: 0.34px;
 margin-bottom: 9px;
 width: 515px;
-
 }
 
 .AboutUs__text:last-of-type {

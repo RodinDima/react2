@@ -3,11 +3,12 @@
 background-color: #ECF7FF;
 border-radius: 0px 400px 0px 0px;
 margin-right: 107px;
-height: 578px;
+
 }
 .business__content{
 padding-top: 92px;
 text-align: center;
+position: relative;
 }
 .content__title {
 display: block;
@@ -66,6 +67,7 @@ z-index: -1;
 .buisness__slider {
 margin-top: 41px;
 margin-left: 222px;
+padding-bottom: 92px;
 }
 
 
@@ -122,7 +124,7 @@ margin-right: 10px;
 gap: 41px;}
 
 .swiper-wrapper{
-gap: 41px;
+gap: 57px;
 position: relative;
 }
 
@@ -196,4 +198,14 @@ opacity: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-40%, -40%);
+}
+.business__dashedCircle {
+position: absolute;
+width: 604px;
+height: 598px;
+border: 2px dashed black;
+border-radius: 50%;
+top: 45px;
+right: -370px;
+z-index: -1;
 }

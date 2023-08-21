@@ -10,6 +10,7 @@ padding-top: 92px;
 text-align: center;
 position: relative;
 }
+
 .content__title {
 display: block;
 color: #331B3B;
@@ -70,8 +71,6 @@ margin-left: 222px;
 padding-bottom: 92px;
 }
 
-
-
 .slider__box {
 display: flex;
 gap: 41px;
@@ -127,9 +126,7 @@ gap: 41px;}
 gap: 57px;
 position: relative;
 }
-
-
-
+ 
 .slider-navigation {
 display: flex;
 
@@ -139,8 +136,6 @@ top: -34px;
 left: -125px;
 gap: 40px;
 }
-
-
 
 .slider-next-button {
 width: 30px; 
@@ -158,7 +153,6 @@ transition: all .3s;
 }
 
 .slider-prev-button {
-
 cursor: pointer;
 width: 15px;
 height: 15px;
@@ -173,31 +167,30 @@ transition: all .3s;
 opacity: 100%;
 }
 
-
 .slider-prev-button::before,
 .slider-next-button::before {
-  content: '';
-  position: absolute;
-  width: 250%;
-  height: 250%;
-  border-radius: 50%;
-  border: 2px solid rgb(0, 0, 0);
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  opacity: 30%;
+content: '';
+position: absolute;
+width: 250%;
+height: 250%;
+border-radius: 50%;
+border: 2px solid rgb(0, 0, 0);
+box-sizing: border-box;
+top: 0;
+left: 0;
+opacity: 30%;
 }
 
 .slider-prev-button::before {
-  top: 50%;
-  left: 50%;
-  transform: translate(-40%, -40%);
+top: 50%;
+left: 50%;
+transform: translate(-40%, -40%);
 }
 
 .slider-next-button::before {
-  top: 50%;
-  left: 50%;
-  transform: translate(-40%, -40%);
+top: 50%;
+left: 50%;
+transform: translate(-40%, -40%);
 }
 .business__dashedCircle {
 position: absolute;

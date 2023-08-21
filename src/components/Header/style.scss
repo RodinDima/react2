@@ -38,23 +38,19 @@ transition: text-shadow 0.3s ease;
 position: relative;
 }
 
-
-
 .header__item:hover .header__item-text {
 text-shadow: 0 0 .45px #292727, 0 0 .45px #2b2929;
 }
 
 .header__item:hover .header__item-text::after{
-	content: "";
-	width: 21px;
-		height: 1px;
-		background-color: #FDC221;
-		position: absolute;
-		bottom: 0;
-		left: 0;
+content: "";
+width: 21px;
+height: 1px;
+background-color: #FDC221;
+position: absolute;
+bottom: 0;
+left: 0;
 }
-
-
 
 .header__social {
 display: flex;
@@ -83,15 +79,12 @@ margin-left: -9px;
 rotate: 15deg;
 }
 
-
 .header__social-link img {
 cursor: pointer;
 }
 
-
 .header__social-link {
 display: inline-block;
-
 cursor: pointer;
 }
 

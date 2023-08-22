@@ -1,6 +1,8 @@
 
 .main__container {
-display: flex;}
+display: flex;
+justify-content: space-between;}
+
 
 .title {
 width: 498px;
@@ -83,10 +85,8 @@ border: none;
 }
 
 .main__img {
-position: absolute;
-top: -85px;
-right: -7px;
-z-index: 10;
+	max-width: 100%;
+		height: auto;
 }
 
 .main-button:hover{
@@ -95,8 +95,8 @@ color: #331B3B;
 }
 
 .main__bg {
-position: relative;
-left: 367px;
+
+	
 }
 
 .yellow {
@@ -107,8 +107,8 @@ z-index: 2;
 }
 
 .rightTopCorner {
-width: 867.54px;
-height: 819.82px;
+width: 1100.54px;
+height: 1100.82px;
 background: rgba(254, 200, 40, 0.2);
 position: absolute;
 right: -378px;

@@ -26,14 +26,14 @@ const SectionMain = () => {
             </div>
               
              <div className='main__bg'>         
-                <img className="yellow" src={Yellow} alt="My SVG" />
-                <div className='dashedCircle'></div>
+                {/*<img className="yellow" src={Yellow} alt="My SVG" />
+                <div className='dashedCircle'></div>*/}
                 <img className="main__img" src={MainBg} alt="My SVG" />
               </div>
           </div>
        
       </main>
-      <div className='rightTopCorner'></div>
+      {/*<div className='rightTopCorner'></div>*/}
     </>
   );
 }

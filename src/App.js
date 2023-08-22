@@ -6,23 +6,16 @@ import SectionMain from "./components/SectionMain/SectionMain";
 import SectionReviews from "./components/SectionReviews/SectionReviews";
 import SectionWork from "./components/SectionWork/SectionWork";
 
-
-
-
 function App() {
   return (
     <>
-      <Header/> 
+      <Header/>
       <SectionMain />
       <SectionBusiness />
-      <SectionAboutUs />
-      <SectionWork />
-      <SectionReviews />
-      <Footer />
-      
-     
-     
-   
+      {/*<SectionAboutUs />*/}
+      {/*<SectionWork />*/}
+      {/*<SectionReviews />*/}
+      {/*<Footer />*/}
     </>
   );
 }

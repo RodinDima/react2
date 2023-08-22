@@ -53,7 +53,7 @@ const Header = () => {
               </div>
               <div className="header__social-wrapper">
                 <a href="#" className="header__social-link">
-                  <img src={Inst} alt="My SVG" />
+                  <img className="inst" src={Inst} alt="My SVG" />
                 </a>
               </div>
             </div>

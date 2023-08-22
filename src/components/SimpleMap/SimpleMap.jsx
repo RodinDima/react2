@@ -8,9 +8,14 @@ const SimpleMap = () => {
   };
 
   return (
-	 <div style={{ height: '300px', width: '484px' }}>
+	 <div style={
+		{ 
+			height: '300px', 
+			width: '484px' 
+		}
+	}>
 		<GoogleMapReact
-		  bootstrapURLKeys={{ key: 'AIzaSyD2vsutIkzReuwBCujfYSjdOxk87nb7Em0' }} // Замініть на свій ключ API
+		  bootstrapURLKeys={{ key: '' }} // Замініть на свій ключ API
 		  defaultCenter={mapOptions.center}
 		  defaultZoom={mapOptions.zoom}
 		>
@@ -20,4 +25,4 @@ const SimpleMap = () => {
   );
 };
 
-//export default SimpleMap;
+export default SimpleMap;

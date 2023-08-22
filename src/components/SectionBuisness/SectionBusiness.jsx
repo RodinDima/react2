@@ -89,7 +89,7 @@ const SectionBusiness = () => {
                   <div className="slider-prev-button"></div>
                   <div className="slider-next-button"></div>
 
-                </div>
+                </div>g
               
             
           </div>

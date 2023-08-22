@@ -17,8 +17,8 @@ const SectionAboutUs = () => {
 
           <div className='about__bg'>
             <img className="about__img" src={About} alt="My SVG" />
-            <img className="about__img-decor" src={AboutYellow} alt="My SVG" />
-            <div className='about__dashedCircle'></div>
+            {/* <img className="about__img-decor" src={AboutYellow} alt="My SVG" />
+            <div className='about__dashedCircle'></div> */}
           </div>
           <div className="AboutUs__content">
             <h3 className='AboutUs__title'><span><TextTemplate className="busines__firstStroke" text="About Us" /> </span><br /><span className='business__title-after'>{SOME_TEXT.sectionAboutUs.title.titleTwo}<span className='lastWord-mod'>{SOME_TEXT.sectionAboutUs.title.titleOne}</span></span></h3>

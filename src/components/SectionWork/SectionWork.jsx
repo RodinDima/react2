@@ -41,6 +41,29 @@ const SectionWork = () => {
             // додаткові кнопки для навігації
             pagination={{ clickable: true }} //
             pagination={{ type: "bullets", clickable: true }}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+              },
+
+              500: {
+                slidesPerView: 1,
+              },
+
+              800: {
+                slidesPerView: 1,
+              },
+
+              1100: {
+                slidesPerView: 2,
+              },
+
+              1400: {
+                slidesPerView: 3,
+              },
+              // Додавайте інші брейкпоінти за потреби
+            }}
+            
             navigation={{
               clickable: true,
               prevEl: ".slider-prev-button",

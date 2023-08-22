@@ -6,14 +6,16 @@
 
 .main__container {
 display: flex;
-justify-content: space-between;}
+}
 
 
 .title {
 width: 498px;
 margin-bottom: 27px;
 }
-
+.main__content {
+	
+}
 .firstStroke {
 color: #331B3B;
 font-family: Hind Vadodara;
@@ -100,8 +102,7 @@ color: #331B3B;
 }
 
 .main__bg {
-position: relative;
-left: 367px;
+
 }
 
 .yellow {

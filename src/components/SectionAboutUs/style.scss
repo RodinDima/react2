@@ -7,18 +7,13 @@ justify-content: space-between;
 }
 
 .about__bg {
-position: relative;
-top: 66px;
-right: -128px;
+
 }
 
 
 .about__img {
-position: absolute;
-top: -352px;
-left: -215px;
-z-index: 2;
-;
+    max-width: 100%;
+    height: auto;
 }
 .about__img-decor {
 position: relative;

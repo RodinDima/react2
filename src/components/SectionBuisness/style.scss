@@ -83,7 +83,9 @@ border-radius: 10px;
 background: #FFF;
 box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
 text-align: start;
-padding: 18px 11px 3px 22px;
+padding-left: 19px;
+padding-top: 19px;
+padding-bottom: 19px;
 width: 308px;
 }
 
@@ -118,12 +120,12 @@ letter-spacing: 0.3px;
 width: 275px;
 }
 .swiper-slide {
-width: 308px !important;
+
 margin-right: 10px;
-gap: 41px;}
+}
 
 .swiper-wrapper{
-gap: 57px;
+
 position: relative;
 }
  

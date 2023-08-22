@@ -9,9 +9,9 @@ import SectionWork from "./components/SectionWork/SectionWork";
 function App() {
   return (
     <>
-      {/*<Header/>*/}
+      <Header/>
       <SectionMain />
-      {/*<SectionBusiness />*/}
+      <SectionBusiness />
       {/*<SectionAboutUs />*/}
       {/*<SectionWork />*/}
       {/*<SectionReviews />*/}

@@ -13,7 +13,7 @@ margin-left: 177px;
 .work__content {
 display: flex;
 justify-content: space-between;
-padding-top: 53px;
+padding-top: 42px;
 }
 
 .work__text {
@@ -88,5 +88,24 @@ top: 400px;
 left: -547px;}
 
 .work__container {
-	translate: -88px;
+translate: -88px;
+}
+.work__firstStroke {
+color: #331B3B;
+font-family: Hind Vadodara;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 106.3%;
+letter-spacing: -0.48px;
+}
+
+.work__title-after {
+color: #331B3B;
+font-family: Hind Vadodara;
+font-size: 48px;
+font-style: normal;
+font-weight: 300;
+line-height: 106.3%;
+letter-spacing: -0.48px;
 }

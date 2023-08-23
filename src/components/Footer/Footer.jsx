@@ -17,7 +17,7 @@ const Footer = () => {
           </p>
           <form className="footer__form" action="">
             <div className="footer__form-text">Get In Touch</div>
-            <div>
+            <div className='footer__form-box'>
               <input
                 className="footer__input"
                 placeholder="Enter Your Email"

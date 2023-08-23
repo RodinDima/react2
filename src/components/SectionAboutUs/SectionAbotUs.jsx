@@ -21,7 +21,7 @@ const SectionAboutUs = () => {
             <div className='about__dashedCircle'></div> */}
           </div>
           <div className="AboutUs__content">
-            <h3 className='AboutUs__title'><span><TextTemplate className="busines__firstStroke" text="About Us" /> </span><br /><span className='business__title-after'>{SOME_TEXT.sectionAboutUs.title.titleTwo}<span className='lastWord-mod'>{SOME_TEXT.sectionAboutUs.title.titleOne}</span></span></h3>
+            <h3 className='AboutUs__title'><span><TextTemplate className="AboutUs__firstStroke" text="About Us" /> </span><br /><span className='AboutUs__title-after'>{SOME_TEXT.sectionAboutUs.title.titleTwo}<span className='lastWord-mod'>{SOME_TEXT.sectionAboutUs.title.titleOne}</span></span></h3>
             <p className="AboutUs__text">{SOME_TEXT.placeholderText}</p>
             <p className="AboutUs__text">{SOME_TEXT.placeholderText}</p>
             <Button

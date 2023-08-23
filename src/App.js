@@ -12,7 +12,7 @@ function App() {
       <Header/>
       <SectionMain />
       <SectionBusiness />
-      {/* <SectionAboutUs /> */}
+      <SectionAboutUs />
       <SectionWork />
       {/*<SectionReviews />*/}
       {/*<Footer />*/}

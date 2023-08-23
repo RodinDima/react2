@@ -16,12 +16,12 @@ const SectionWork = () => {
           <h3 className="work__title">
             <span>
               <TextTemplate
-                className="busines__firstStroke"
+                className="work__firstStroke"
                 text="Our Recent Work"
               />{" "}
             </span>
             <br />
-            <span className="business__title-after">
+            <span className="work__title-after">
               By Our <span className="lastWord-mod">Experts</span>
             </span>
           </h3>

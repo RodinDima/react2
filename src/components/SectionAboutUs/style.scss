@@ -1,5 +1,5 @@
 .AboutUs {
-margin-top: 200px;
+
 }
 .AboutUs__container {
 display: flex;
@@ -7,14 +7,22 @@ justify-content: space-between;
 }
 
 .about__bg {
-
+width: 762px;
+height: auto;
+position: relative;
+overflow: hidden;
 }
 
 
 .about__img {
-    max-width: 100%;
-    height: auto;
+width: 100%;
+height: auto;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 }
+
 .about__img-decor {
 position: relative;
 left: -128px;
@@ -40,7 +48,26 @@ margin-top: 80px;
 .AboutUs__title{
 margin-bottom: 22px;
 }
+.AboutUs__firstStroke {
+color: #331B3B;
+text-align: center;
+font-family: Hind Vadodara;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 106.3%;
+letter-spacing: -0.48px;
+}
 
+.AboutUs__title-after {
+color: #331B3B;
+font-family: Hind Vadodara;
+font-size: 48px;
+font-style: normal;
+font-weight: 300;
+line-height: 106.3%;
+letter-spacing: -0.48px;
+}
 .AboutUs__text {
 color: rgba(51, 27, 59, 0.66);
 font-family: Hind Vadodara;

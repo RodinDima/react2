@@ -99,16 +99,16 @@ left: 3px;
 
 
 @media (max-width: 1200px) {
-	.footer__container {
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+.footer__container {
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
 .footer__map {
-	display: none;}
-		.footer__container .footer__content {
-		padding: 40px;
-	}
+display: none;}
+.footer__container .footer__content {
+padding: 40px;
+}
 }
 
 
@@ -126,8 +126,18 @@ width: 100%;
 title .title-after .last__Word::before {
 height: 12px;
 }
-.main__img {
-max-width: 80%;
+		.main__container .main__content {
+	margin-right: 0;
+}
+.main__container {
+	flex-direction: column;
+}
+	
+
+
+.image-container {
+	width: 50%;
+	order: -1;
 }
 
 .about__bg {
@@ -176,7 +186,9 @@ gap: 34px
 .reviews__container .reviews__blocks {
 gap: 34px;
 }
-
+		.header__container .header__content {
+	margin-bottom: 38px;
+}
 
 }
 
@@ -350,37 +362,37 @@ font-size: 38px;
 
 }
 
-		
 
-		.reviews__content .reviews__firstStroke {
-			font-size: 38px;
-		}
-	
-		.reviews__content .reviews__title-after {
-			font-size: 38px;
-		}
+
+.reviews__content .reviews__firstStroke {
+font-size: 38px;
+}
+
+.reviews__content .reviews__title-after {
+font-size: 38px;
+}
 
 }
 
 @media (max-width: 520px) {
-	.footer__form-box {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-		}
-		.footer__btn {
-			width: 100%;
-		}
+.footer__form-box {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.footer__btn {
+width: 100%;
+}
 }
 
 
 
 @media (max-width: 480px) {
-		.reviews__item .reviews__item-text{
-		width: auto;
-	}
-		
+.reviews__item .reviews__item-text{
+width: auto;
+}
+
 
 }
 
@@ -418,13 +430,13 @@ margin-left: 0;
 .work__content .work__firstStroke {
 font-size: 32px;
 }
-						.reviews__content .reviews__firstStroke {
-			font-size: 32px;
-		}
-	
-						.reviews__content .reviews__title-after {
-			font-size: 32px;
-		}
+.reviews__content .reviews__firstStroke {
+font-size: 32px;
+}
+
+.reviews__content .reviews__title-after {
+font-size: 32px;
+}
 
 
 }

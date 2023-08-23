@@ -14,7 +14,7 @@ width: 498px;
 margin-bottom: 27px;
 }
 .main__content {
-	
+	margin-right: 100px;
 }
 .firstStroke {
 color: #331B3B;
@@ -91,26 +91,28 @@ font-size: 17px;
 border: none;
 }
 
-.main__img {
-	max-width: 100%;
-		height: auto;
-}
+
 
 .main-button:hover{
 background: #FDC221;
 color: #331B3B;
 }
 
-.main__bg {
 
-}
-
-.yellow {
+.image-container .yellow {
 position: relative;
-top: -138px;
-left: -174px;
-z-index: 2;
+top: -585px;
+left: 107px;
+z-index: -1;
 }
+
+
+.main__img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
 
 .rightTopCorner {
 width: 1100.54px;
@@ -132,4 +134,9 @@ border-radius: 50%;
 top: -50px;
 right: 158px;
 z-index: 1;
+}
+
+ .main__bg {
+	height: 600px;
+		width: 100%;
 }

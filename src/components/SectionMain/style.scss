@@ -98,14 +98,34 @@ background: #FDC221;
 color: #331B3B;
 }
 
-
-.image-container .yellow {
+.image-container {
 position: relative;
-top: -585px;
-left: 107px;
+
+}
+.image-container .yellow {
+object-fit: contain;
+position: absolute;
+left: 65px;
+top: -83px;
+height: 631px;
+width: 70%;
 z-index: -1;
 }
 
+
+
+
+.image-container .yellow::before{
+		content: "";
+		position: absolute;
+		width: 581px;
+		height: 498px;
+		border: 2px dashed black;
+		border-radius: 50%;
+		top: -50px;
+		right: 158px;
+		z-index: 1;
+}
 
 .main__img {
 	width: 100%;
@@ -138,5 +158,5 @@ z-index: 1;
 
  .main__bg {
 	height: 600px;
-		width: 100%;
+	width: 100%;
 }

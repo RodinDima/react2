@@ -35,7 +35,8 @@ const SectionMain = () => {
 
           <div className="image-container">
             <img className="main__img" src={MainBg} alt="My SVG" />
-            {/*<img className="yellow" src={Yellow} alt="My SVG" />*/}
+            <img className="yellow" src={Yellow} alt="My SVG" />
+            
           </div>
         </div>
       </main>

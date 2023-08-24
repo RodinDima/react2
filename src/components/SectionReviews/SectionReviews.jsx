@@ -1,9 +1,8 @@
-import React from 'react';
-import TextTemplate from '../TextTemplate';
-import { ReactComponent as Icon } from './image/icon.svg';
+import React from "react";
+import TextTemplate from "../TextTemplate";
+import { ReactComponent as Icon } from "./image/icon.svg";
 
-
-import './style.scss';
+import "./style.scss";
 
 const SectionReviews = () => {
   return (
@@ -52,6 +51,6 @@ const SectionReviews = () => {
       </div>
     </section>
   );
-}
+};
 
 export default SectionReviews;

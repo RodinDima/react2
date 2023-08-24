@@ -1,12 +1,12 @@
-import React from 'react';
-import TextTemplate from '../TextTemplate';
-import Big from './image/big.png';
-import Small from './image/small.png';
-import { Navigation, Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import React from "react";
+import TextTemplate from "../TextTemplate";
+import Big from "./image/big.png";
+import Small from "./image/small.png";
+import { Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
-import './style.scss';
+import "./style.scss";
 
 const SectionWork = () => {
   return (
@@ -36,11 +36,8 @@ const SectionWork = () => {
         <div className="slider-container">
           <Swiper
             slidesPerView={2}
-            spaceBetween={10} // проміжок між слайдами
+            spaceBetween={40} // проміжок між слайдами
             modules={[Navigation, Pagination]}
-            // додаткові кнопки для навігації
-            pagination={{ clickable: true }} //
-            pagination={{ type: "bullets", clickable: true }}
             breakpoints={{
               320: {
                 slidesPerView: 1,
@@ -63,7 +60,6 @@ const SectionWork = () => {
               },
               // Додавайте інші брейкпоінти за потреби
             }}
-            
             navigation={{
               clickable: true,
               prevEl: ".slider-prev-button",
@@ -137,6 +133,6 @@ const SectionWork = () => {
       </div>
     </section>
   );
-}
+};
 
 export default SectionWork;

@@ -15,7 +15,7 @@ overflow: hidden;
 
 
 .about__img {
-width: 100%;
+width: 621px;
 height: auto;
 position: absolute;
 top: 50%;
@@ -24,10 +24,13 @@ transform: translate(-50%, -50%);
 }
 
 .about__img-decor {
-position: relative;
-left: -128px;
-top: -124px;
-z-index: 1;
+width: 472px;
+height: auto;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: -1;
 }
 
 .about__dashedCircle {

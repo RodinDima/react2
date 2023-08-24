@@ -1,13 +1,14 @@
-import './reset.scss';
-import './style.scss';
-import Button from '../Button/Buttonx';
-import MainBg from './image/main-bg.png';
-import Yellow from './image/yellow.png';
-import TextTemplate from '../TextTemplate';
+import "./reset.scss";
+import "./style.scss";
+import Button from "../Button/Buttonx";
+import MainBg from "./image/main-bg.png";
+import Yellow from "./image/yellow.png";
+import TextTemplate from "../TextTemplate";
 
 const SectionMain = () => {
   return (
     <>
+      {/*<div className="rightTopCorner"></div>*/}
       <main className="main">
         <div className="main__container">
           <div className="main__content">
@@ -36,13 +37,12 @@ const SectionMain = () => {
           <div className="image-container">
             <img className="main__img" src={MainBg} alt="My SVG" />
             <img className="yellow" src={Yellow} alt="My SVG" />
-            
+            <div></div>
           </div>
         </div>
       </main>
-      {/*<div className='rightTopCorner'></div>*/}
     </>
   );
-}
+};
 
 export default SectionMain;

@@ -1,19 +1,16 @@
-import React from 'react';
-import TextTemplate from '../TextTemplate';
-import Web from './image/web.png';
+import React from "react";
+import TextTemplate from "../TextTemplate";
+import Web from "./image/web.png";
 
-import { Navigation, Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import './style.scss';
+import { Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "./style.scss";
 
 const SectionBusiness = () => {
   return (
     <section className="business">
       <div className="business__container">
-        {/*<TextTemplate>
-            <span className={style['special-text']}>What We Do</span> <span className={style['special-text']}>For Your</span> <span className={style['special-text']}>Business</span> <span className={style['pseudo-class-text']}>Fake or Real</span>
-          </TextTemplate>*/}
         <div className="business__content">
           {/*<div className='business__dashedCircle'></div>*/}
 
@@ -33,11 +30,10 @@ const SectionBusiness = () => {
           <div className="slider buisness__slider">
             <Swiper
               slidesPerView={3}
-              spaceBetween={10}
-              modules={[Navigation, Pagination]}
-              pagination={{ type: "bullets", clickable: true }}
+              spaceBetween={50}
+              modules={[Pagination]}
               breakpoints={{
-                320: {
+                300: {
                   slidesPerView: 1,
                 },
 
@@ -45,7 +41,7 @@ const SectionBusiness = () => {
                   slidesPerView: 1,
                 },
 
-                800: {
+                900: {
                   slidesPerView: 1,
                 },
 
@@ -65,21 +61,6 @@ const SectionBusiness = () => {
               }}
             >
               <SwiperSlide style={{ width: "300px", marginRight: "" }}>
-                <div className="slider">
-                  <div className="slider__item">
-                    <div className="slider__item-img">
-                      <img src={Web} alt="My SVG" />
-                    </div>
-                    <div className="slider__item-title">Website Design</div>
-                    <div className="slider__item-text">
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s.
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
                 <div className="slider__item">
                   <div className="slider__item-img">
                     <img src={Web} alt="My SVG" />
@@ -104,6 +85,7 @@ const SectionBusiness = () => {
                   </div>
                 </div>
               </SwiperSlide>
+
               <SwiperSlide>
                 <div className="slider__item">
                   <div className="slider__item-img">
@@ -127,20 +109,29 @@ const SectionBusiness = () => {
                     since the 1500s.
                   </div>
                 </div>
-                </SwiperSlide>
-                </Swiper>
-                <div className="slider-navigation">
-                  <div className="slider-prev-button"></div>
-                  <div className="slider-next-button"></div>
-
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="slider__item">
+                  <div className="slider__item-img">
+                    <img src={Web} alt="My SVG" />
+                  </div>
+                  <div className="slider__item-title">Website Design</div>
+                  <div className="slider__item-text">
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s.
+                  </div>
                 </div>
-              
-            
+              </SwiperSlide>
+            </Swiper>
+            <div className="slider-navigation">
+              <div className="slider-prev-button"></div>
+              <div className="slider-next-button"></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default SectionBusiness;

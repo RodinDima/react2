@@ -115,17 +115,6 @@ z-index: -1;
 
 
 
-.image-container .yellow::before{
-		content: "";
-		position: absolute;
-		width: 581px;
-		height: 498px;
-		border: 2px dashed black;
-		border-radius: 50%;
-		top: -50px;
-		right: 158px;
-		z-index: 1;
-}
 
 .main__img {
 	width: 100%;

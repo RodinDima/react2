@@ -47,29 +47,7 @@ const Header = () => {
             </nav>
             
            
-            {/* <Burger /> */}
-              {/* <ul className="header__mobile menu--open">
-                <li className="menu__item">
-                  <a href="#" className="menu__item-text">
-                    Home
-                  </a>
-                </li>
-                <li className="menu__item">
-                  <a href="#" className="menu__item-text">
-                    About Us
-                  </a>
-                </li>
-                <li className="menu__item">
-                  <a href="#" className="menu__item-text">
-                    Services{" "}
-                  </a>
-                </li>
-                <li className="menu__item">
-                  <a href="#" className="menu__item-text">
-                    Contact Us
-                  </a>
-                </li>
-              </ul> */}
+            <Burger />
            
 
 

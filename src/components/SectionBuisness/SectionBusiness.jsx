@@ -37,7 +37,6 @@ const SectionBusiness = () => {
               breakpoints={{
                 // when window width is >= 640px
                 320: {
-                  width: 320,
                   slidesPerView: 1,
                 },
 

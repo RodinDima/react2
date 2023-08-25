@@ -43,8 +43,10 @@ const SectionWork = () => {
                 width: 320,
                 slidesPerView: 1,
               },
-
-             
+              1024: {
+                width: 320,
+                slidesPerView: 1,
+              },
 
               // Додавайте інші брейкпоінти за потреби
             }}

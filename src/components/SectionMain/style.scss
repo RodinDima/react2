@@ -7,6 +7,10 @@
 .main__container {
 display: flex;
 }
+.main__container::before {
+content: "";
+
+}
 
 .title {
 width: 498px;

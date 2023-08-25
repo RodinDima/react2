@@ -111,6 +111,13 @@ text-align: center;
 }
 
 
+
+
+.header__menu-mobile, .menu__btn {
+    
+}
+
+
 @media (max-width: 1200px) {
 .footer__container {
 flex-direction: column;
@@ -462,6 +469,26 @@ font-size: 38px;
 
 .reviews__content .reviews__title-after {
 font-size: 38px;
+}
+
+
+.menu__btn {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 45px;
+height: 30px;
+background-color: transparent;
+border: none;
+cursor: pointer;
+}
+.menu__btn span {
+height: 3px;
+width: 100%;
+background-color: #1f1e1e;
+}
+.header__mobile {
+display: none;
 }
 
 }

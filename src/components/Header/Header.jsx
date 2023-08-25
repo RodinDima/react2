@@ -4,6 +4,11 @@ import FaceBook from "./image/Facebook.svg";
 import In from "./image/in.svg";
 import Inst from "./image/inst.svg";
 import Logo from "./image/logo.png";
+import React, { useState } from 'react';
+
+import Burger from "../Burger/Burger";
+
+
 
 const Header = () => {
   return (
@@ -11,30 +16,65 @@ const Header = () => {
       <header>
         <div className="header__container">
           <div className="header__content">
+            
+            
+            
+            
+            
             <nav className="header__menu">
               <ul className="header__list">
                 <li className="header__item">
-                  <a href="" className="header__item-text">
+                  <a href="#" className="header__item-text">
                     Home
                   </a>
                 </li>
                 <li className="header__item">
-                  <a href="" className="header__item-text">
+                  <a href="#" className="header__item-text">
                     About Us
                   </a>
                 </li>
                 <li className="header__item">
-                  <a href="" className="header__item-text">
+                  <a href="#" className="header__item-text">
                     Services{" "}
                   </a>
                 </li>
                 <li className="header__item">
-                  <a href="" className="header__item-text">
+                  <a href="#" className="header__item-text">
                     Contact Us
                   </a>
                 </li>
               </ul>
             </nav>
+            
+           
+            {/* <Burger /> */}
+              {/* <ul className="header__mobile menu--open">
+                <li className="menu__item">
+                  <a href="#" className="menu__item-text">
+                    Home
+                  </a>
+                </li>
+                <li className="menu__item">
+                  <a href="#" className="menu__item-text">
+                    About Us
+                  </a>
+                </li>
+                <li className="menu__item">
+                  <a href="#" className="menu__item-text">
+                    Services{" "}
+                  </a>
+                </li>
+                <li className="menu__item">
+                  <a href="#" className="menu__item-text">
+                    Contact Us
+                  </a>
+                </li>
+              </ul> */}
+           
+
+
+
+
             <div className="header__logo">
               <a href="#" className="header__logo-link">
                 <img src={Logo} alt="My SVG" />

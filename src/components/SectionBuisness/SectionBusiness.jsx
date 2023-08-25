@@ -35,16 +35,14 @@ const SectionBusiness = () => {
               spaceBetween={50}
               modules={[Navigation]}
               breakpoints={{
-                300: {
+                // when window width is >= 640px
+                320: {
+                  width: 320,
                   slidesPerView: 1,
                 },
-                900: {
-                  slidesPerView: 1,
-                },
-                1100: {
-                  slidesPerView: 1,
-                },
-                1400: {
+
+                640: {
+                  width: 640,
                   slidesPerView: 1,
                 },
               }}

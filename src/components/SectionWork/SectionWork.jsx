@@ -40,22 +40,12 @@ const SectionWork = () => {
             modules={[Navigation, Pagination]}
             breakpoints={{
               320: {
+                width: 320,
                 slidesPerView: 1,
               },
 
-              500: {
-                slidesPerView: 1,
-              },
+             
 
-              800: {
-                slidesPerView: 1,
-              },
-
-              1355: {
-                slidesPerView: 1,
-              },
-
-            
               // Додавайте інші брейкпоінти за потреби
             }}
             navigation={{

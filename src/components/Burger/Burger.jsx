@@ -1,15 +1,23 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './style.scss';
 
 const Burger = ({ menuOpen }) => {
 
-  const [open, setOpen] = useState(false);
+  
+
+  console.log('menuOpen', menuOpen);
+  const [open, setOpen] = useState(menuOpen);
+
+
+  useEffect(() => {
+    setOpen(!menuOpen);
+  }, [menuOpen])
+
 
   const isActive = open ? 'active' : '';
-  console.log('opem', open);
-  console.log('isActive', isActive);
-  console.log('open after setOpen', open);
+  // console.log('opem', open);
+
 
   const toggleMenu = () => {
     if (open) {
@@ -18,7 +26,6 @@ const Burger = ({ menuOpen }) => {
       setOpen(true);
     }
   }
-
 
 
   return (

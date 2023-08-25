@@ -41,21 +41,17 @@ const Header = () => {
               </a>
             </div>
             <div className="header__social">
-              <div className="header__social-wrapper">
-                <a href="#" className="header__social-link">
-                  <img src={FaceBook} alt="My SVG" />
-                </a>
-              </div>
-              <div className="header__social-wrapper">
-                <a href="#" className="header__social-link">
-                  <img src={In} alt="My SVG" />
-                </a>
-              </div>
-              <div className="header__social-wrapper">
-                <a href="#" className="header__social-link">
-                  <img className="inst" src={Inst} alt="My SVG" />
-                </a>
-              </div>
+              <a href="#" className="header__social-link">
+                <img src={FaceBook} alt="My SVG" />
+              </a>
+
+              <a href="#" className="header__social-link">
+                <img src={In} alt="My SVG" />
+              </a>
+
+              <a href="#" className="header__social-link">
+                <img className="inst" src={Inst} alt="My SVG" />
+              </a>
             </div>
           </div>
         </div>

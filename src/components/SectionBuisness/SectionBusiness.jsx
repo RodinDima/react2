@@ -2,12 +2,14 @@ import React from "react";
 import TextTemplate from "../TextTemplate";
 import Web from "./image/web.png";
 
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation,  } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./style.scss";
 
 const SectionBusiness = () => {
+  
+  
   return (
     <section className="business">
       <div className="business__container">
@@ -31,28 +33,20 @@ const SectionBusiness = () => {
             <Swiper
               slidesPerView={3}
               spaceBetween={50}
-              modules={[Pagination]}
+              modules={[Navigation]}
               breakpoints={{
                 300: {
                   slidesPerView: 1,
                 },
-
-                500: {
-                  slidesPerView: 1,
-                },
-
                 900: {
                   slidesPerView: 1,
                 },
-
                 1100: {
-                  slidesPerView: 2,
+                  slidesPerView: 1,
                 },
-
                 1400: {
-                  slidesPerView: 3,
+                  slidesPerView: 1,
                 },
-                // Додавайте інші брейкпоінти за потреби
               }}
               navigation={{
                 clickable: true,

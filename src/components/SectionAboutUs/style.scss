@@ -13,6 +13,18 @@ position: relative;
 overflow: hidden;
 }
 
+.about__bg::before {
+content: "";
+position: absolute;
+border: 2px dashed black;
+border-radius: 50%;
+width: 517px;
+height: 468px;
+z-index: -1;
+top: 38px;
+left: 88px;
+}
+
 
 .about__img {
 width: 621px;

@@ -8,7 +8,6 @@
 display: flex;
 }
 
-
 .title {
 width: 498px;
 margin-bottom: 27px;
@@ -91,8 +90,6 @@ font-size: 17px;
 border: none;
 }
 
-
-
 .main-button:hover{
 background: #FDC221;
 color: #331B3B;
@@ -102,6 +99,19 @@ color: #331B3B;
 position: relative;
 
 }
+
+.image-container::before{
+	content: "";
+	position: absolute;
+	
+		border: 2px dashed black;
+		border-radius: 50%;
+		width: 90%;
+			height: 100%;
+		z-index: -1;
+}
+
+
 .image-container .yellow {
 object-fit: contain;
 position: absolute;
@@ -111,10 +121,6 @@ height: 631px;
 width: 70%;
 z-index: -1;
 }
-
-
-
-
 
 .main__img {
 	width: 100%;

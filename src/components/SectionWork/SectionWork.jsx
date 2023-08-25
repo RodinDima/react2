@@ -36,19 +36,13 @@ const SectionWork = () => {
         <div className="slider-container">
           <Swiper
             slidesPerView={3}
-            spaceBetween={30} // проміжок між слайдами
+            spaceBetween={30}
             modules={[Navigation, Pagination]}
             breakpoints={{
               320: {
                 width: 320,
                 slidesPerView: 1,
               },
-              1024: {
-                width: 320,
-                slidesPerView: 1,
-              },
-
-              // Додавайте інші брейкпоінти за потреби
             }}
             navigation={{
               clickable: true,

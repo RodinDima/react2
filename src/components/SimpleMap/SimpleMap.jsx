@@ -15,12 +15,10 @@ const SimpleMap = () => {
       }}
     >
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "" }} // Замініть на свій ключ API
+        bootstrapURLKeys={{ key: "" }}
         defaultCenter={mapOptions.center}
         defaultZoom={mapOptions.zoom}
-      >
-        {/* Тут ви можете додавати маркери чи інші елементи на карту */}
-      </GoogleMapReact>
+      ></GoogleMapReact>
     </div>
   );
 };

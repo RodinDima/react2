@@ -2,20 +2,16 @@ import React from "react";
 import TextTemplate from "../TextTemplate";
 import Web from "./image/web.png";
 
-import { Navigation,  } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./style.scss";
 
 const SectionBusiness = () => {
-  
-  
   return (
     <section className="business">
       <div className="business__container">
         <div className="business__content">
-          {/*<div className='business__dashedCircle'></div>*/}
-
           <h3 className="busines__title">
             <span>
               <TextTemplate
@@ -35,7 +31,6 @@ const SectionBusiness = () => {
               spaceBetween={50}
               modules={[Navigation]}
               breakpoints={{
-                // when window width is >= 640px
                 320: {
                   slidesPerView: 1,
                 },

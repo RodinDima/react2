@@ -15,7 +15,6 @@ const SectionAboutUs = () => {
           <div className="about__bg">
             <img className="about__img" src={About} alt="My SVG" />
             <img className="about__img-decor" src={AboutYellow} alt="My SVG" />
-            {/*<div className='about__dashedCircle'></div> */}
           </div>
           <div className="AboutUs__content">
             <h3 className="AboutUs__title">

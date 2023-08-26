@@ -18,6 +18,7 @@ flex-wrap: wrap;
 .reviews__item {
 padding: 24px 35px 39px 29px;
 box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.08);
+box-sizing: border-box;
 }
 
 .reviews__item-img {
@@ -70,3 +71,7 @@ font-style: normal;
 font-weight: 300;
 line-height: 110.8%;
 letter-spacing: -0.48px;}
+
+.open {
+    max-width: 384px;
+}

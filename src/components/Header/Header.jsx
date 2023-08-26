@@ -13,7 +13,7 @@ import Burger from "../Burger/Burger";
 const Header = () => {
 
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   console.log('isOpen', isOpen);
 
@@ -31,7 +31,7 @@ const Header = () => {
             <nav className="header__menu">
               <ul className="header__list">
                 <li className="header__item">
-                  <a href="#" className="header__item-text" onClick={handleIsOpen}>
+                  <a href="#" className="header__item-text" >
                     Home
                   </a>
                 </li>

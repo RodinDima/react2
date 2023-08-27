@@ -13,6 +13,7 @@ justify-content: center;
 gap: 69px
 ;
 flex-wrap: wrap;
+align-items: flex-start;
 }
 
 .reviews__item {
@@ -40,6 +41,7 @@ line-height: 159.3%; /* 25.488px */
 letter-spacing: 0.32px;
 position: relative;
 padding-left: 16px;
+cursor: pointer;
 }
 
 .reviews__item-ui::before{
@@ -72,6 +74,3 @@ font-weight: 300;
 line-height: 110.8%;
 letter-spacing: -0.48px;}
 
-.open {
-    max-width: 384px;
-}

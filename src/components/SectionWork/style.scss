@@ -1,0 +1,113 @@
+.work {
+border-radius: 400px 0px 0px 0px;
+background: rgba(255, 222, 212, 0.30);
+height: 673px;
+margin-top: 100px;
+margin-bottom: 75px;
+margin-left: 177px;
+
+}
+
+.work__content {
+display: flex;
+justify-content: space-between;
+padding-top: 42px;
+}
+
+.work__text {
+width: 515px;
+color: #331B3B;
+font-family: Hind Vadodara;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 146.3%; /* 24.871px */
+letter-spacing: 0.34px;
+margin-bottom: 89px;
+}
+.work__slider {
+position: relative;
+}
+
+.slider__work {
+
+gap: 43px;
+margin-left: 309px;
+}
+
+.slider__work-box {
+background-color: #FFF;
+width: 419px;
+padding: 24px 9px 38px 9px;
+border-radius: 10px;
+box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+
+}
+.slider__work-item {
+margin-left: 13px;
+margin-bottom: 30px;
+}
+
+.slider__work-content{
+display: flex;
+justify-content: space-between;
+
+}
+
+.slider__work-text {
+color: #331B3B;
+font-family: Hind Vadodara;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 146.3%;
+margin-left: 30px;
+cursor: pointer;
+}
+.slider__work-btn {
+padding: 2px 12px;
+color: #331B3B;
+font-family: Hind Vadodara;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 200.3%;
+border-radius: 100px;
+border: 1px solid #343434;
+display: inline-block;
+margin-right: 30px;
+}
+
+
+
+.slider__work .slider-navigation {
+position: absolute;
+top: 400px;
+left: -547px;}
+
+.work__container {
+translate: -88px;
+}
+.work__firstStroke {
+color: #331B3B;
+font-family: Hind Vadodara;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 106.3%;
+letter-spacing: -0.48px;
+}
+
+.work__title-after {
+color: #331B3B;
+font-family: Hind Vadodara;
+font-size: 48px;
+font-style: normal;
+font-weight: 300;
+line-height: 106.3%;
+letter-spacing: -0.48px;
+}
+
+.slider-container .swiper-slide {
+	width: auto !important;
+}

@@ -1,0 +1,27 @@
+.d-none {
+    display: none;
+}
+
+.open {
+    display: inline-block;
+}
+
+
+
+.s-none {
+    display: none;
+ 
+}
+.actives {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0 10px ;
+}
+
+.open {
+    max-width: 384px;
+}
+
+@media (max-width:1024px) {
+.reviews__blocks .reviews__item .open { width: 100%;}
+}

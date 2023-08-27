@@ -1,0 +1,162 @@
+
+
+.main {
+	margin-bottom: 106px;
+}
+
+.main__container {
+display: flex;
+}
+.main__container::before {
+content: "";
+
+}
+
+.title {
+width: 498px;
+margin-bottom: 27px;
+}
+.main__content {
+	margin-right: 100px;
+}
+.firstStroke {
+color: #331B3B;
+font-family: Hind Vadodara;
+font-size: 87px;
+font-style: normal;
+font-weight: 700;
+line-height: 99.8%; 
+letter-spacing: -0.87px;
+}
+
+.title-after {
+color: #331B3B;
+font-family: Hind Vadodara;
+font-size: 87px;
+font-style: normal;
+font-weight: 300;
+line-height: 99.8%;
+letter-spacing: -0.87px;
+position: relative;
+z-index: 1;
+}
+
+.after{
+display: inline-block;  
+width: 291px;
+height: 10px;
+background-color: #FDC221;
+position: relative;
+top: -21px;
+left: -3px;
+z-index: 0;
+}
+
+.lastWord {
+position: relative;
+display: inline-block;
+z-index: 10;
+}
+
+.lastWord::before {
+content: "";
+position: absolute;
+width: 95%;
+height: 17px;
+background-color:#FDC221 ;
+bottom: 0;
+z-index: -1;
+display: inline-block;
+}
+
+.main__text-paragraph{
+color: rgba(51, 27, 59, 0.66);
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 146.3%; 
+letter-spacing: 0.34px;
+width: 515px;
+margin-bottom: 31px;
+}
+
+.main-button {
+border-radius: 10px;
+background: #331B3B;
+padding: 22px 49px;
+color: #fff;
+cursor: pointer;
+line-height: 137.3%;
+letter-spacing: 0.34px;
+text-transform: uppercase;
+font-family: Hind Vadodara;
+font-size: 17px;
+border: none;
+transition: all .3s;
+}
+
+.main-button:hover{
+background: #FDC221;
+color: #331B3B;
+}
+
+.image-container {
+position: relative;
+
+}
+
+.image-container::before{
+	content: "";
+	position: absolute;
+	
+		border: 2px dashed black;
+		border-radius: 50%;
+		width: 90%;
+			height: 100%;
+		z-index: -1;
+}
+
+
+.image-container .yellow {
+object-fit: contain;
+position: absolute;
+left: 65px;
+top: -83px;
+height: 631px;
+width: 70%;
+z-index: -1;
+}
+
+.main__img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+
+.rightTopCorner {
+width: 1100.54px;
+height: 1100.82px;
+background: rgba(254, 200, 40, 0.2);
+position: absolute;
+right: -378px;
+top: -369px;
+border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+z-index: -1;
+}
+
+.dashedCircle {
+position: absolute;
+width: 581px;
+height: 498px;
+border: 2px dashed black;
+border-radius: 50%;
+top: -50px;
+right: 158px;
+z-index: 1;
+}
+
+ .main__bg {
+	height: 600px;
+	width: 100%;
+}

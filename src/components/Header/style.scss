@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;600;700&family=Oswald:wght@300;400&display=swap');
+@import '../../css/var.scss';
+
 
 body {
 font-family: 'Hind Vadodara', sans-serif;
@@ -419,6 +421,7 @@ font-size: 40px;
 }
 
 .main__text-paragraph {
+    color: $blue;
 font-size: 14px;
 width: 100%;
 }
@@ -514,10 +517,6 @@ font-size: 38px;
 height: 3px;
 width: 100%;
 background-color: #1f1e1e;
-}
-
-.header__mobile {
-display: none;
 }
 
 .about__bg {

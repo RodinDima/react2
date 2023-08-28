@@ -522,7 +522,12 @@ background-color: #1f1e1e;
 .about__bg {
 display: none;
 }
-
+.header__list {
+    display: none;
+}
+.header__menu {
+    display: none;
+}
 }
 
 @media (max-width: 520px) {

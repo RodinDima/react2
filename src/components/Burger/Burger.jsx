@@ -1,22 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import './style.scss';
 
-const Burger = ({ menuOpen }) => {
+const Burger = () => {
 
-  
-
-  console.log('menuOpen', menuOpen);
-  const [open, setOpen] = useState(menuOpen);
-
-
-  useEffect(() => {
-    setOpen(!menuOpen);
-  }, [menuOpen])
-
+  const [open, setOpen] = useState(false);
 
   const isActive = open ? 'active' : '';
-  // console.log('opem', open);
 
 
   const toggleMenu = () => {
@@ -27,10 +17,11 @@ const Burger = ({ menuOpen }) => {
     }
   }
 
+  console.log('isActive', isActive)
 
   return (
     <>
-    <button className={`menu__btn ${menuOpen ? 'menu--open' : ''}`} onClick={toggleMenu}>
+    <button className={`menu__btn ${isActive ? 'menu--open' : ''}`} onClick={toggleMenu}>
       <span></span>
       <span></span>
       <span></span>

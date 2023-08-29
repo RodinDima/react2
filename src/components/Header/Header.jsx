@@ -4,7 +4,7 @@ import FaceBook from "./image/Facebook.svg";
 import In from "./image/in.svg";
 import Inst from "./image/inst.svg";
 import Logo from "./image/logo.png";
-import React, { useState } from 'react';
+import React from 'react';
 
 import Burger from "../Burger/Burger";
 
@@ -12,17 +12,6 @@ import Burger from "../Burger/Burger";
 
 const Header = () => {
 
-
-  const [isOpen, setIsOpen] = useState(true);
-
-  console.log('isOpen', isOpen);
-
-  const handleIsOpen = () => {
-    setIsOpen(!isOpen);
-  }
-
-  console.log('isOpen2', isOpen);
-  
   return (
     <>
       <header>
@@ -54,7 +43,7 @@ const Header = () => {
             </nav>
             
            
-            <Burger menuOpen={isOpen} />
+            <Burger />
            
 
 

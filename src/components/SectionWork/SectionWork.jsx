@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import TextTemplate from "../TextTemplate";
 import Big from "./image/big.png";
 import Small from "./image/small.png";
@@ -11,56 +11,72 @@ import { SOME_TEXT } from "../../constants";
 
 const SectionWork = () => {
   
-  const [openSliderText, setOpenSliderText] = useState();
-  
-  const handleSliderText = () => {
-    if (openSliderText) {
-      setOpenSliderText(false);
-    }
-    else {
-      setOpenSliderText(true);
-    }
-  
-  }
-  
-  const [openSliderText2, setOpenSliderText2] = useState();
-  
-  const handleSliderText2 = () => {
-    if (openSliderText2) {
-      setOpenSliderText2(false);
-    }
-    else {
-      setOpenSliderText2(true);
-    }
-  
-  }
-  const [openSliderText3, SetOpenSliderText3] = useState();
+  const [openSliderText, setOpenSliderText] = useState(null);
 
-  const handleSliderText3 = () => {
-    if (openSliderText3) {
-      SetOpenSliderText3(false);
-    }
-    else {
-      SetOpenSliderText3(true);
-    }
-  }
+  const handleToggle = useCallback( (index) => {
+    console.log('index', index);
+    if (openSliderText === index) {
+			setOpenSliderText(null);
+		} else {
+			setOpenSliderText(index);
+		}
+  }, [openSliderText])
 
-  const [openSecondtext4, setOpenSliderText4] = useState();
-  const handleOpenMoreText4 = () => {
-    if (openSecondtext4) {
-      setOpenSliderText4(false);
-    }
-    else {
-      setOpenSliderText4(true);
-    }
+  
+  // const handleSliderText = () => {
+  //   if (openSliderText) {
+  //     setOpenSliderText(false);
+  //   }
+  //   else {
+  //     setOpenSliderText(true);
+  //   }
+  
+  // }
+
+  const array = [{name: "Glorik", id: 3}, {name: "Ywatay", id: 2}, {name: "anvi", id: 1}]
+
+
+
+  
+  // const [openSliderText2, setOpenSliderText2] = useState('false');
+  
+  // const handleSliderText2 = (id) => {
+  //   if (openSliderText2) {
+  //     setOpenSliderText2('true');
+  //   }
+  //   else {
+  //     setOpenSliderText2('false');
+  //   }
+  
+  // }
+  // const [openSliderText3, SetOpenSliderText3] = useState();
+
+  // const handleSliderText3 = () => {
+  //   if (openSliderText3) {
+  //     SetOpenSliderText3(false);
+  //   }
+  //   else {
+  //     SetOpenSliderText3(true);
+  //   }
+  // }
+
+  // const [openSecondtext4, setOpenSliderText4] = useState();
+  // const handleOpenMoreText4 = () => {
+  //   if (openSecondtext4) {
+  //     setOpenSliderText4(false);
+  //   }
+  //   else {
+  //     setOpenSliderText4(true);
+  //   }
 
     
-  }
+  // }
  
   
   
   return (
     <section className="work">
+      {/* {array.map((item) => <div key={item.id} onClick={() => handleToggle(item.id)} data-test-id={openSliderText}>{item.name}</div>)} */}
       <div className="work__container">
         <div className="work__content">
           <h3 className="work__title">
@@ -107,12 +123,12 @@ const SectionWork = () => {
                   <img className="small" src={Small} alt="My SVG" />
                 </div>
                 <div className="slider__work-content">
-                  <p className="slider__work-text" onClick={handleSliderText3}>UI Soup</p>
+                  <p className="slider__work-text" onClick={() => handleToggle('1')}>UI Soup</p>
                   <a className="slider__work-btn" href="">
                     View Work
                   </a>
                 </div>
-                <SliderText text={SOME_TEXT.placeholderText} isOpen={openSliderText3}/>
+                <SliderText text={SOME_TEXT.placeholderText} isOpen={openSliderText}/>
               </div>
             </SwiperSlide>
 
@@ -123,12 +139,12 @@ const SectionWork = () => {
                   <img className="small"  src={Small} alt="My SVG" />
                 </div>
                 <div className="slider__work-content">
-                  <p className="slider__work-text"onClick={handleSliderText2} >UI Soup</p>
+                  <p className="slider__work-text" onClick={() => handleToggle('2')} >UI Soup</p>
                   <a className="slider__work-btn" href="">
                     View Work
                   </a>
                 </div>
-                <SliderText text={SOME_TEXT.placeholderText} isOpen={openSliderText2} />
+                <SliderText text={SOME_TEXT.placeholderText} id={'2'} isOpen={openSliderText} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -138,7 +154,7 @@ const SectionWork = () => {
                   <img className="small" src={Small} alt="My SVG" />
                 </div>
                 <div className="slider__work-content">
-                  <p className="slider__work-text" onClick={handleSliderText}>UI Soup</p>
+                  {/* <p className="slider__work-text" onClick={handleSliderText}>UI Soup</p> */}
                   
                   <a className="slider__work-btn" href="">
                     View Work
@@ -155,12 +171,12 @@ const SectionWork = () => {
                   <img className="small" src={Small} alt="My SVG" />
                 </div>
                 <div className="slider__work-content">
-                  <p className="slider__work-text" onClick={handleOpenMoreText4}>UI Soup</p>
+                  {/* <p className="slider__work-text" onClick={handleOpenMoreText4}>UI Soup</p> */}
                   <a className="slider__work-btn" href="">
                     View Work
                   </a>
                 </div>
-                <SliderText text={SOME_TEXT.placeholderText} isOpen={openSecondtext4} />
+                {/* <SliderText text={SOME_TEXT.placeholderText} isOpen={openSecondtext4} /> */}
               </div>
             </SwiperSlide>
           </Swiper>

@@ -1,4 +1,4 @@
-
+@import '../../css/var.scss';
 
 .main {
 	margin-bottom: 106px;
@@ -71,6 +71,7 @@ display: inline-block;
 
 .main__text-paragraph{
 color: rgba(51, 27, 59, 0.66);
+color: $blue;
 font-size: 17px;
 font-style: normal;
 font-weight: 400;

@@ -13,13 +13,12 @@ const SectionWork = () => {
   
   const [openSliderText, setOpenSliderText] = useState(null);
 
-  const handleToggle = useCallback( (index) => {
-    console.log('index', index);
-    if (openSliderText === index) {
-			setOpenSliderText(null);
-		} else {
-			setOpenSliderText(index);
-		}
+  const handleToggle = useCallback((id) => {
+    if (openSliderText === id) {
+      setOpenSliderText(null);
+    } else {
+      setOpenSliderText(id);
+    }
   }, [openSliderText])
 
   
@@ -33,11 +32,7 @@ const SectionWork = () => {
   
   // }
 
-  const array = [{name: "Glorik", id: 3}, {name: "Ywatay", id: 2}, {name: "anvi", id: 1}]
 
-
-
-  
   // const [openSliderText2, setOpenSliderText2] = useState('false');
   
   // const handleSliderText2 = (id) => {
@@ -128,7 +123,9 @@ const SectionWork = () => {
                     View Work
                   </a>
                 </div>
-                <SliderText text={SOME_TEXT.placeholderText} isOpen={openSliderText}/>
+                { openSliderText === '1' &&
+                  <SliderText text={SOME_TEXT.placeholderText} />
+                }
               </div>
             </SwiperSlide>
 
@@ -144,7 +141,9 @@ const SectionWork = () => {
                     View Work
                   </a>
                 </div>
-                <SliderText text={SOME_TEXT.placeholderText} id={'2'} isOpen={openSliderText} />
+                { openSliderText === '2' &&
+                  <SliderText text={SOME_TEXT.placeholderText} />
+                }
               </div>
             </SwiperSlide>
             <SwiperSlide>

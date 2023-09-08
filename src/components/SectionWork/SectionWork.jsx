@@ -10,18 +10,19 @@ import SliderText from "../../UI/MoreText/SliderText";
 import { SOME_TEXT } from "../../constants";
 
 const SectionWork = () => {
-  
   const [openSliderText, setOpenSliderText] = useState(null);
 
-  const handleToggle = useCallback((id) => {
-    if (openSliderText === id) {
-      setOpenSliderText(null);
-    } else {
-      setOpenSliderText(id);
-    }
-  }, [openSliderText])
+  const handleToggle = useCallback(
+    (id) => {
+      if (openSliderText === id) {
+        setOpenSliderText(null);
+      } else {
+        setOpenSliderText(id);
+      }
+    },
+    [openSliderText]
+  );
 
-  
   // const handleSliderText = () => {
   //   if (openSliderText) {
   //     setOpenSliderText(false);
@@ -29,12 +30,11 @@ const SectionWork = () => {
   //   else {
   //     setOpenSliderText(true);
   //   }
-  
+
   // }
 
-
   // const [openSliderText2, setOpenSliderText2] = useState('false');
-  
+
   // const handleSliderText2 = (id) => {
   //   if (openSliderText2) {
   //     setOpenSliderText2('true');
@@ -42,7 +42,7 @@ const SectionWork = () => {
   //   else {
   //     setOpenSliderText2('false');
   //   }
-  
+
   // }
   // const [openSliderText3, SetOpenSliderText3] = useState();
 
@@ -64,11 +64,8 @@ const SectionWork = () => {
   //     setOpenSliderText4(true);
   //   }
 
-    
   // }
- 
-  
-  
+
   return (
     <section className="work">
       {/* {array.map((item) => <div key={item.id} onClick={() => handleToggle(item.id)} data-test-id={openSliderText}>{item.name}</div>)} */}
@@ -118,14 +115,19 @@ const SectionWork = () => {
                   <img className="small" src={Small} alt="My SVG" />
                 </div>
                 <div className="slider__work-content">
-                  <p className="slider__work-text" onClick={() => handleToggle('1')}>UI Soup</p>
+                  <p
+                    className="slider__work-text"
+                    onClick={() => handleToggle("1")}
+                  >
+                    UI Soup
+                  </p>
                   <a className="slider__work-btn" href="">
                     View Work
                   </a>
                 </div>
-                { openSliderText === '1' &&
+                {openSliderText === "1" && (
                   <SliderText text={SOME_TEXT.placeholderText} />
-                }
+                )}
               </div>
             </SwiperSlide>
 
@@ -133,17 +135,22 @@ const SectionWork = () => {
               <div className="slider__work-box">
                 <div className="slider__work-item">
                   <img className="big" src={Big} alt="My SVG" />
-                  <img className="small"  src={Small} alt="My SVG" />
+                  <img className="small" src={Small} alt="My SVG" />
                 </div>
                 <div className="slider__work-content">
-                  <p className="slider__work-text" onClick={() => handleToggle('2')} >UI Soup</p>
+                  <p
+                    className="slider__work-text"
+                    onClick={() => handleToggle("2")}
+                  >
+                    UI Soup
+                  </p>
                   <a className="slider__work-btn" href="">
                     View Work
                   </a>
                 </div>
-                { openSliderText === '2' &&
+                {openSliderText === "2" && (
                   <SliderText text={SOME_TEXT.placeholderText} />
-                }
+                )}
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -153,14 +160,21 @@ const SectionWork = () => {
                   <img className="small" src={Small} alt="My SVG" />
                 </div>
                 <div className="slider__work-content">
-                  {/* <p className="slider__work-text" onClick={handleSliderText}>UI Soup</p> */}
-                  
+                  <p
+                    className="slider__work-text"
+                    on
+                    onClick={() => handleToggle("3")}
+                  >
+                    UI Soup
+                  </p>
+
                   <a className="slider__work-btn" href="">
                     View Work
                   </a>
-                 
                 </div>
-                 <SliderText text={SOME_TEXT.placeholderText} isOpen={openSliderText} />
+                {openSliderText === "3" && (
+                  <SliderText text={SOME_TEXT.placeholderText} />
+                )}
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -170,12 +184,20 @@ const SectionWork = () => {
                   <img className="small" src={Small} alt="My SVG" />
                 </div>
                 <div className="slider__work-content">
-                  {/* <p className="slider__work-text" onClick={handleOpenMoreText4}>UI Soup</p> */}
+                  <p
+                    className="slider__work-text"
+                    on
+                    onClick={() => handleToggle("4")}
+                  >
+                    UI Soup
+                  </p>
                   <a className="slider__work-btn" href="">
                     View Work
                   </a>
                 </div>
-                {/* <SliderText text={SOME_TEXT.placeholderText} isOpen={openSecondtext4} /> */}
+                {openSliderText === "4" && (
+                  <SliderText text={SOME_TEXT.placeholderText} />
+                )}
               </div>
             </SwiperSlide>
           </Swiper>

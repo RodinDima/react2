@@ -62,7 +62,7 @@ const SectionReviews = () => {
               only five centuries.
             </div>
             <div className="reviews__item-ui" onClick={handleOpenMoreText} >UI Soup</div>
-            <MoreText text={SOME_TEXT.placeholderText} isOpen={openMoretext} />
+            <MoreText  text={SOME_TEXT.placeholderText} isOpen={openMoretext} />
           </div>
           <div className="reviews__item">
             <div className="reviews__item-img">

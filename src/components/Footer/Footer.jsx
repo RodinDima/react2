@@ -30,7 +30,12 @@ const textAnimation2 = {
 
 const Footer = () => {
   return (
-    <motion.footer initial="hidden" whileInView="visible" className="footer">
+    <motion.footer
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2 }}
+      className="footer"
+    >
       <div className="footer__container">
         <div className="footer__content">
           <motion.h3
@@ -70,7 +75,10 @@ const Footer = () => {
           </motion.form>
         </div>
         <motion.div
-          custom={1} variants={textAnimation2} className="footer__map">
+          custom={1}
+          variants={textAnimation2}
+          className="footer__map"
+        >
           <SimpleMap />
         </motion.div>
       </div>

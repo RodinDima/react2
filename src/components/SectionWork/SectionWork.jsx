@@ -54,7 +54,12 @@ const SectionWork = () => {
 
 
   return (
-    <motion.section initial="hidden" whileInView="visible" className="work">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2 }}
+      className="work"
+    >
       {/* {array.map((item) => <div key={item.id} onClick={() => handleToggle(item.id)} data-test-id={openSliderText}>{item.name}</div>)} */}
       <div className="work__container">
         <div className="work__content">

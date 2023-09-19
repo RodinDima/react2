@@ -29,7 +29,12 @@ const textAnimation = {
 
 const SectionBusiness = () => {
   return (
-    <motion.section initial="hidden" whileInView="visible" className="business">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2 }}
+      className="business"
+    >
       <div className="business__container">
         <div className="business__content">
           <motion.h3

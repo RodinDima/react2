@@ -58,7 +58,12 @@ const SectionReviews = () => {
   }
 
   return (
-    <motion.section initial="hidden" whileInView="visible" className="reviews">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2 }}
+      className="reviews"
+    >
       <div className="reviews__container">
         <div className="reviews__content">
           <motion.h3

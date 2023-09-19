@@ -38,7 +38,12 @@ const imgAnimation = {
 const SectionMain = () => {
   return (
     <>
-      <motion.main initial="hidden" whileInView="visible" className="main">
+      <motion.main
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ amount: 0.2 }}
+        className="main"
+      >
         <div className="main__container">
           <div className="main__content">
             <motion.h3

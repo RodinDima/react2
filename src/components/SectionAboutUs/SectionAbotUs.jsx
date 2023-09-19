@@ -40,6 +40,7 @@ const SectionAboutUs = () => {
       <motion.section
         initial="hidden"
         whileInView="visible"
+        viewport={{ amount: 0.2}}
         className="AboutUs"
       >
         <div className="AboutUs__container">

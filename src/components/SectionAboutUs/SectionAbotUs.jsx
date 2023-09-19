@@ -1,23 +1,58 @@
-import "./reset.scss";
-import "./style.scss";
-import Button from "../Button/Buttonx";
+import { MButton } from "../Button/Buttonx";
+import { motion } from "framer-motion";
 import About from "./image/about.png";
 import AboutYellow from "./image/about__yellow.png";
 import { SOME_TEXT } from "../../constants/index";
 
 import TextTemplate from "../TextTemplate";
 
+import "./reset.scss";
+import "./style.scss";
+
+const textAnimation = {
+  hidden: {
+    x: 100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.1, duration: 0.5 },
+  }),
+};
+const imgAnimation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.1, duration: 0.5 },
+  }),
+};
+
+
+
 const SectionAboutUs = () => {
   return (
     <>
-      <section className="AboutUs">
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
+        className="AboutUs"
+      >
         <div className="AboutUs__container">
-          <div className="about__bg">
+          <motion.div custom={1} variants={imgAnimation} className="about__bg">
             <img className="about__img" src={About} alt="My SVG" />
             <img className="about__img-decor" src={AboutYellow} alt="My SVG" />
-          </div>
+          </motion.div>
           <div className="AboutUs__content">
-            <h3 className="AboutUs__title">
+            <motion.h3
+              custom={1}
+              variants={textAnimation}
+              className="AboutUs__title"
+            >
               <span>
                 <TextTemplate
                   className="AboutUs__firstStroke"
@@ -31,10 +66,24 @@ const SectionAboutUs = () => {
                   {SOME_TEXT.sectionAboutUs.title.titleOne}
                 </span>
               </span>
-            </h3>
-            <p className="AboutUs__text">{SOME_TEXT.placeholderText}</p>
-            <p className="AboutUs__text">{SOME_TEXT.placeholderText}</p>
-            <Button
+            </motion.h3>
+            <motion.p
+              custom={2}
+              variants={textAnimation}
+              className="AboutUs__text"
+            >
+              {SOME_TEXT.placeholderText}
+            </motion.p>
+            <motion.p
+              custom={3}
+              variants={textAnimation}
+              className="AboutUs__text"
+            >
+              {SOME_TEXT.placeholderText}
+            </motion.p>
+            <MButton
+              custom={3}
+              variants={textAnimation}
               buttonText="Explore More"
               onClick={() => {
                 console.log("Button clicked");
@@ -43,7 +92,7 @@ const SectionAboutUs = () => {
             />
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

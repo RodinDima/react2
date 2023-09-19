@@ -1,18 +1,42 @@
 import React from "react";
+
+import { motion } from "framer-motion";
+
 import TextTemplate from "../TextTemplate";
 import Web from "./image/web.png";
 
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
 import "./style.scss";
 
+const textAnimation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.1, duration: 0.5 },
+  }),
+};
+
+
+
+
+
 const SectionBusiness = () => {
   return (
-    <section className="business">
+    <motion.section initial="hidden" whileInView="visible" className="business">
       <div className="business__container">
         <div className="business__content">
-          <h3 className="busines__title">
+          <motion.h3
+            custom={1}
+            variants={textAnimation}
+            className="busines__title"
+          >
             <span>
               <TextTemplate
                 className="busines__firstStroke"
@@ -24,7 +48,7 @@ const SectionBusiness = () => {
               For Your
               <span className="lastWord-mod">Busines</span>
             </span>
-          </h3>
+          </motion.h3>
           <div className="slider buisness__slider">
             <Swiper
               slidesPerView={3}
@@ -116,7 +140,7 @@ const SectionBusiness = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

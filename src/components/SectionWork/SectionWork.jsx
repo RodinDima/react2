@@ -1,13 +1,41 @@
 import React, { useCallback, useEffect, useState } from "react";
-import TextTemplate from "../TextTemplate";
+import { motion } from "framer-motion";
+
 import Big from "./image/big.png";
 import Small from "./image/small.png";
+
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "./style.scss";
+
+import TextTemplate from "../TextTemplate";
 import SliderText from "../../UI/MoreText/SliderText";
 import { SOME_TEXT } from "../../constants";
+
+import "swiper/css";
+import "./style.scss";
+
+const textAnimation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.1, duration: 0.5 },
+  }),
+};
+const textAnimation2 = {
+  hidden: {
+    x: 100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.1, duration: 0.5 },
+  }),
+};
 
 const SectionWork = () => {
   const [openSliderText, setOpenSliderText] = useState(null);
@@ -23,55 +51,18 @@ const SectionWork = () => {
     [openSliderText]
   );
 
-  // const handleSliderText = () => {
-  //   if (openSliderText) {
-  //     setOpenSliderText(false);
-  //   }
-  //   else {
-  //     setOpenSliderText(true);
-  //   }
 
-  // }
-
-  // const [openSliderText2, setOpenSliderText2] = useState('false');
-
-  // const handleSliderText2 = (id) => {
-  //   if (openSliderText2) {
-  //     setOpenSliderText2('true');
-  //   }
-  //   else {
-  //     setOpenSliderText2('false');
-  //   }
-
-  // }
-  // const [openSliderText3, SetOpenSliderText3] = useState();
-
-  // const handleSliderText3 = () => {
-  //   if (openSliderText3) {
-  //     SetOpenSliderText3(false);
-  //   }
-  //   else {
-  //     SetOpenSliderText3(true);
-  //   }
-  // }
-
-  // const [openSecondtext4, setOpenSliderText4] = useState();
-  // const handleOpenMoreText4 = () => {
-  //   if (openSecondtext4) {
-  //     setOpenSliderText4(false);
-  //   }
-  //   else {
-  //     setOpenSliderText4(true);
-  //   }
-
-  // }
 
   return (
-    <section className="work">
+    <motion.section initial="hidden" whileInView="visible" className="work">
       {/* {array.map((item) => <div key={item.id} onClick={() => handleToggle(item.id)} data-test-id={openSliderText}>{item.name}</div>)} */}
       <div className="work__container">
         <div className="work__content">
-          <h3 className="work__title">
+          <motion.h3
+            custom={1}
+            variants={textAnimation}
+            className="work__title"
+          >
             <span>
               <TextTemplate
                 className="work__firstStroke"
@@ -82,15 +73,19 @@ const SectionWork = () => {
             <span className="work__title-after">
               By Our <span className="lastWord-mod">Experts</span>
             </span>
-          </h3>
-          <p className="work__text">
+          </motion.h3>
+          <motion.p custom={2} variants={textAnimation2} className="work__text">
             Lorem Ipsum has been the industry's standard dummy text ever since
             the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book.
-          </p>
+          </motion.p>
         </div>
       </div>
-      <div className="work__slider slider__work">
+      <motion.div
+        custom={5}
+        variants={textAnimation2}
+        className="work__slider slider__work"
+      >
         <div className="slider-container">
           <Swiper
             slidesPerView={3}
@@ -207,8 +202,8 @@ const SectionWork = () => {
           <div className="slider-prev-button"></div>
           <div className="slider-next-button"></div>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 

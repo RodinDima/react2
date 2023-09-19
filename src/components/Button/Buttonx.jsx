@@ -1,17 +1,23 @@
-import React  from 'react';
-import cn from 'classnames';
 
+
+
+import React from 'react';
+import cn from 'classnames';
+import { motion } from 'framer-motion';
+import { forwardRef } from "react";
 import style from './style.module.css';
 
-const Button = (props) => {
+export const Button = forwardRef((props, ref) => {
 	const {
 		className,
 		buttonText,
 		onClick,
 	} = props
 	return (
-		<button className={cn(style.primalBtn, className)} onClick={onClick} >{buttonText}</button>
+		<button ref={ref} className={cn(style.primalBtn, className)} onClick={onClick} >{buttonText}</button>
 	);
-}
+})
 
-export default Button;
+export const MButton = motion(Button);
+
+export default MButton;

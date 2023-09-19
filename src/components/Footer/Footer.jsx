@@ -1,20 +1,61 @@
+import { motion } from "framer-motion";
+
+import SimpleMap from "../SimpleMap/index";
+
 import "./reset.scss";
 import "./style.scss";
-import SimpleMap from "../SimpleMap/index";
+
+const textAnimation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.1, duration: 0.5 },
+  }),
+};
+const textAnimation2 = {
+  hidden: {
+    x: 100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.1, duration: 0.5 },
+  }),
+};
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <motion.footer initial="hidden" whileInView="visible" className="footer">
       <div className="footer__container">
         <div className="footer__content">
-          <h3 className="footer__title">Dream Agency</h3>
-          <p className="footer__text">
+          <motion.h3
+            custom={1}
+            variants={textAnimation}
+            className="footer__title"
+          >
+            Dream Agency
+          </motion.h3>
+          <motion.p
+            custom={2}
+            variants={textAnimation}
+            className="footer__text"
+          >
             Lorem Ipsum has been the industry's standard dummy text ever since
             the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book. It has survived not only
             five centuries.
-          </p>
-          <form className="footer__form" action="">
+          </motion.p>
+          <motion.form
+            custom={3}
+            variants={textAnimation}
+            className="footer__form"
+            action=""
+          >
             <div className="footer__form-text">Get In Touch</div>
             <div className="footer__form-box">
               <input
@@ -26,13 +67,14 @@ const Footer = () => {
                 Send
               </button>
             </div>
-          </form>
+          </motion.form>
         </div>
-        <div className="footer__map">
+        <motion.div
+          custom={1} variants={textAnimation2} className="footer__map">
           <SimpleMap />
-        </div>
+        </motion.div>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

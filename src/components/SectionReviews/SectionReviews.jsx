@@ -5,38 +5,32 @@ import TextTemplate from "../TextTemplate";
 
 import { ReactComponent as Icon } from "./image/icon.svg";
 
-import MoreText from '../../UI/MoreText/MoreText';
-import { SOME_TEXT } from '../../constants';
+import MoreText from "../../UI/MoreText/MoreText";
+import { SOME_TEXT } from "../../constants";
 
 import "./style.scss";
 
 const textAnimation = {
   hidden: {
-    x: -100,
     opacity: 0,
   },
   visible: (custom) => ({
-    x: 0,
     opacity: 1,
-    transition: { delay: custom * 0.1, duration: 0.5 },
+    transition: { delay: custom * 0.1, duration: 0.7 },
   }),
 };
 const textAnimation2 = {
   hidden: {
-    x: 100,
     opacity: 0,
   },
   visible: (custom) => ({
-    x: 0,
     opacity: 1,
-    transition: { delay: custom * 0.1, duration: 0.5 },
+    transition: { delay: custom * 0.1, duration: 0.7 },
   }),
 };
 
 const SectionReviews = () => {
-
   const [openMoretext, setOpenMoreText] = useState();
-
 
   const handleOpenMoreText = () => {
     if (openMoretext) {
@@ -44,24 +38,22 @@ const SectionReviews = () => {
     } else {
       setOpenMoreText(true);
     }
-  }
+  };
   const [openSecondtext, setOpenSecondText] = useState();
 
   const handleOpenSecondText = () => {
     if (openSecondtext) {
       setOpenSecondText(false);
-    }
-    else {
+    } else {
       setOpenSecondText(true);
     }
-
-  }
+  };
 
   return (
     <motion.section
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.2 }}
+      viewport={{ amount: 0.2, once: true }}
       className="reviews"
     >
       <div className="reviews__container">

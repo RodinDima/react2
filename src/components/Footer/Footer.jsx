@@ -3,28 +3,25 @@ import { motion } from "framer-motion";
 import SimpleMap from "../SimpleMap/index";
 
 import "./reset.scss";
+
 import "./style.scss";
 
 const textAnimation = {
   hidden: {
-    x: -100,
     opacity: 0,
   },
   visible: (custom) => ({
-    x: 0,
     opacity: 1,
-    transition: { delay: custom * 0.1, duration: 0.5 },
+    transition: { delay: custom * 0.1, duration: 0.7 },
   }),
 };
 const textAnimation2 = {
   hidden: {
-    x: 100,
     opacity: 0,
   },
   visible: (custom) => ({
-    x: 0,
     opacity: 1,
-    transition: { delay: custom * 0.1, duration: 0.5 },
+    transition: { delay: custom * 0.1, duration: 0.7 },
   }),
 };
 
@@ -33,7 +30,7 @@ const Footer = () => {
     <motion.footer
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.2 }}
+      viewport={{ amount: 0.2, once: true }}
       className="footer"
     >
       <div className="footer__container">

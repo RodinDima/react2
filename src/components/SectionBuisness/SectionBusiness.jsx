@@ -9,30 +9,25 @@ import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
+
 import "./style.scss";
 
 const textAnimation = {
   hidden: {
-    x: -100,
     opacity: 0,
   },
   visible: (custom) => ({
-    x: 0,
     opacity: 1,
-    transition: { delay: custom * 0.1, duration: 0.5 },
+    transition: { delay: custom * 0.1, duration: 0.7 },
   }),
 };
-
-
-
-
 
 const SectionBusiness = () => {
   return (
     <motion.section
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.2 }}
+      viewport={{ amount: 0.2, once: true }}
       className="business"
     >
       <div className="business__container">

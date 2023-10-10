@@ -1,38 +1,35 @@
 import { MButton } from "../Button/Buttonx";
 import { motion } from "framer-motion";
+
 import About from "./image/about.png";
 import AboutYellow from "./image/about__yellow.png";
+
 import { SOME_TEXT } from "../../constants/index";
 
 import TextTemplate from "../TextTemplate";
 
 import "./reset.scss";
+
 import "./style.scss";
 
 const textAnimation = {
   hidden: {
-    x: 100,
     opacity: 0,
   },
   visible: (custom) => ({
-    x: 0,
     opacity: 1,
     transition: { delay: custom * 0.1, duration: 0.5 },
   }),
 };
 const imgAnimation = {
   hidden: {
-    x: -100,
     opacity: 0,
   },
   visible: (custom) => ({
-    x: 0,
     opacity: 1,
-    transition: { delay: custom * 0.1, duration: 0.5 },
+    transition: { delay: custom * 0.1, duration: 0.7 },
   }),
 };
-
-
 
 const SectionAboutUs = () => {
   return (
@@ -40,7 +37,7 @@ const SectionAboutUs = () => {
       <motion.section
         initial="hidden"
         whileInView="visible"
-        viewport={{ amount: 0.2}}
+        viewport={{ amount: 0.2, once: true }}
         className="AboutUs"
       >
         <div className="AboutUs__container">
